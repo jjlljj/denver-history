@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import ReactMapGL from 'react-map-gl'
 import mapboxgl from 'mapbox-gl'
 import  { MB_TOKEN } from '../.key' 
+import Vrscene from '../Vrscene/Vrscene'
   
 export default class Map extends Component {
 
@@ -86,7 +87,8 @@ export default class Map extends Component {
     }
       
     return (
-      <div style={style} ref={el => this.mapContainer = el} ></div>
+      <div style={style} ref={el => this.mapContainer = el} >
+      </div>
     )
   }
 }
