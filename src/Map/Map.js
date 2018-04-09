@@ -70,6 +70,32 @@ export default class Map extends Component {
               'fill-extrusion-opacity': .6
           }
       }, labelLayerId);
+
+        map.loadImage('https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Cat_silhouette.svg/400px-Cat_silhouette.svg.png', function(error, image) {
+        if (error) throw error;
+        map.addImage('cat', image);
+        map.addLayer({
+            "id": "points",
+            "type": "symbol",
+            "source": {
+                "type": "geojson",
+                "data": {
+                    "type": "FeatureCollection",
+                    "features": [{
+                        "type": "Feature",
+                        "geometry": {
+                            "type": "Point",
+                            "coordinates": [-105.0007, 39.7537]
+                        }
+                    }]
+                }
+            },
+            "layout": {
+                "icon-image": "cat",
+                "icon-size": 0.25
+            }
+        });
+    });
     })
 
   }
