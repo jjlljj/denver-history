@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import ReactMapGL from 'react-map-gl'
 import mapboxgl from 'mapbox-gl'
 import  { MB_TOKEN } from '../.key' 
-import Vrscene from '../Vrscene/Vrscene'
+import { Threebox } from 'threebox'
   
 export default class Map extends Component {
 
@@ -96,8 +96,10 @@ export default class Map extends Component {
             }
         });
     });
-    })
+        window.Threebox = new Threebox(map);
+        Threebox.setupDefaultLights();
 
+    })
   }
 
   componentWillUnmount() {

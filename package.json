@@ -5,12 +5,14 @@
   "dependencies": {
     "aframe": "^0.8.1",
     "aframe-react": "^4.4.0",
+    "ajv": "^6.4.0",
     "dotenv": "^5.0.1",
     "mapbox-gl": "^0.44.2",
     "react": "^16.3.1",
     "react-dom": "^16.3.1",
     "react-map-gl": "^3.2.5",
-    "react-scripts": "1.1.4"
+    "react-scripts": "1.1.4",
+    "threebox": "^0.1.5"
   },
   "scripts": {
     "start": "react-scripts start",
