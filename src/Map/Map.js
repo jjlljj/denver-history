@@ -1,21 +1,10 @@
 import React, { Component } from 'react'
-import ReactMapGL from 'react-map-gl'
 import mapboxgl from 'mapbox-gl'
 import  { MB_TOKEN } from '../.key' 
 import { Threebox } from 'threebox'
+import * as THREE from 'three';
   
 export default class Map extends Component {
-
-  state = {
-    viewport: {
-      width: 400,
-      height: 400,
-      latitude: 37.7577,
-      longitude: -122.4376,
-      zoom: 8
-    }
-  }
-
     
   componentDidMount() {
     mapboxgl.accessToken = MB_TOKEN
@@ -32,18 +21,19 @@ export default class Map extends Component {
      maxWidth: 80,
      unit: 'imperial'
     }));
-    const map = this.map
-      map.on('load', function() {
-      // Insert the layer beneath any symbol layer.
-      var layers = map.getStyle().layers;
 
-      var labelLayerId;
-      for (var i = 0; i < layers.length; i++) {
-          if (layers[i].type === 'symbol' && layers[i].layout['text-field']) {
-              labelLayerId = layers[i].id;
-              break;
-          }
-      }
+    const map = this.map
+    map.on('load', function() {
+    // Insert the layer beneath any symbol layer.
+    var layers = map.getStyle().layers;
+
+    var labelLayerId;
+    for (var i = 0; i < layers.length; i++) {
+        if (layers[i].type === 'symbol' && layers[i].layout['text-field']) {
+            labelLayerId = layers[i].id;
+            break;
+        }
+    }
 
       map.addLayer({
           'id': '3d-buildings',
@@ -97,7 +87,18 @@ export default class Map extends Component {
         });
     });
         window.Threebox = new Threebox(map);
-        Threebox.setupDefaultLights();
+        window.Threebox.setupDefaultLights();
+
+        var loader = new THREE.JSONLoader();
+        loader.load("models/boeing747-400-jw.json", function(geometry) {
+            geometry.rotateY((90/360)*2*Math.PI);
+            geometry.rotateX((90/360)*2*Math.PI);
+            var material = new THREE.MeshPhongMaterial( {color: 0xaaaaff, side: THREE.DoubleSide}); 
+            var aircraft = new THREE.Mesh( geometry, material );
+            var planePosition = [-105.0007, 39.7537, 100];
+            // Add the model to the threebox scenegraph at a specific geographic coordinate
+            Threebox.addAtCoordinate(aircraft, planePosition, {scaleToLatitude: true, preScale: 2});
+        });
 
     })
   }
