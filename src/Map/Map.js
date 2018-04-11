@@ -22,6 +22,8 @@ export default class Map extends Component {
      unit: 'imperial'
     }));
 
+    this.map.addControl(new mapboxgl.NavigationControl())
+
     const map = this.map
     map.on('load', function() {
     // Insert the layer beneath any symbol layer.
@@ -61,44 +63,91 @@ export default class Map extends Component {
           }
       }, labelLayerId);
 
-        map.loadImage('https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Cat_silhouette.svg/400px-Cat_silhouette.svg.png', function(error, image) {
-        if (error) throw error;
-        map.addImage('cat', image);
-        map.addLayer({
-            "id": "points",
-            "type": "symbol",
-            "source": {
-                "type": "geojson",
-                "data": {
-                    "type": "FeatureCollection",
-                    "features": [{
-                        "type": "Feature",
-                        "geometry": {
-                            "type": "Point",
-                            "coordinates": [-105.0007, 39.7537]
-                        }
-                    }]
-                }
-            },
-            "layout": {
-                "icon-image": "cat",
-                "icon-size": 0.25
-            }
-        });
-    });
-        window.Threebox = new Threebox(map);
-        window.Threebox.setupDefaultLights();
+        //map.loadImage('https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Cat_silhouette.svg/400px-Cat_silhouette.svg.png', function(error, image) {
+        //if (error) throw error;
+        //map.addImage('cat', image);
+        //map.addLayer({
+            //"id": "points",
+            //"type": "symbol",
+            //"source": {
+                //"type": "geojson",
+                //"data": {
+                    //"type": "FeatureCollection",
+                    //"features": [{
+                        //"type": "Feature",
+                        //"geometry": {
+                            //"type": "Point",
+                            //"coordinates": [-105.0007, 39.7537]
+                        //}
+                    //}]
+                //}
+            //},
+            //"layout": {
+                //"icon-image": "cat",
+                //"icon-size": 0.25
+            //}
+        //});
+      //});
+        
 
-        var loader = new THREE.JSONLoader();
-        loader.load("models/boeing747-400-jw.json", function(geometry) {
-            geometry.rotateY((90/360)*2*Math.PI);
-            geometry.rotateX((90/360)*2*Math.PI);
-            var material = new THREE.MeshPhongMaterial( {color: 0xaaaaff, side: THREE.DoubleSide}); 
-            var aircraft = new THREE.Mesh( geometry, material );
-            var planePosition = [-105.0007, 39.7537, 100];
-            // Add the model to the threebox scenegraph at a specific geographic coordinate
-            Threebox.addAtCoordinate(aircraft, planePosition, {scaleToLatitude: true, preScale: 2});
-        });
+       map.addLayer({
+        "id": "points",
+        "type": "symbol",
+        "source": {
+            "type": "geojson",
+            "data": {
+                "type": "FeatureCollection",
+                "features": [{
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [-106.0007, 39.7537]
+                    },
+                    "properties": {
+                        "title": "Mapbox DC",
+                        "icon": "monument"
+                    }
+                }, {
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [-105.0014, 39.7537]
+                    },
+                    "properties": {
+                        "title": "Mapbox SF",
+                        "icon": "harbor"
+                    }
+                }]
+            }
+        },
+        "layout": {
+            "icon-image": "{icon}-15",
+            "text-field": "{title}",
+            "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"],
+            "text-offset": [0, 0.6],
+            "text-anchor": "top"
+        }
+    });
+
+          map.on('click', 'points', event => {
+            const title = event.features[0].properties.title
+            console.log(title)
+          })
+
+
+        //window.Threebox = new Threebox(map);
+        //window.Threebox.setupDefaultLights();
+
+        //var loader = new THREE.JSONLoader();
+        //loader.load("models/boeing747-400-jw.json", function(geometry) {
+            //geometry.rotateY((90/360)*2*Math.PI);
+            //geometry.rotateX((90/360)*2*Math.PI);
+            //var material = new THREE.MeshPhongMaterial( {color: 0xaaaaff, side: THREE.DoubleSide}); 
+            //var aircraft = new THREE.Mesh( geometry, material );
+            //var planePosition = [-105.0007, 39.7537, 100];
+            //// Add the model to the threebox scenegraph at a specific geographic coordinate
+            //Threebox.addAtCoordinate(aircraft, planePosition, {scaleToLatitude: true, preScale: 2});
+        //});
 
     })
   }
