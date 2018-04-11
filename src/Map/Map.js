@@ -89,7 +89,12 @@ export default class Map extends Component {
         //});
       //});
         
-
+      // RENDER GEOJSON POINTS
+      // render points in 'features' array based on coordinates: []
+      // can add data to properties: {} 
+      //    --> this is what we can add our data or a query id elsewhere to dispatch actions
+      //    --> have access to points properties based on event
+      //    --> can use ID or some datapoint stored here to dispatch display actions elsewhere
        map.addLayer({
         "id": "points",
         "type": "symbol",
@@ -115,7 +120,7 @@ export default class Map extends Component {
                     },
                     "properties": {
                         "title": "Mapbox SF",
-                        "icon": "harbor"
+                        "icon": "monument"
                     }
                 }]
             }
@@ -129,6 +134,11 @@ export default class Map extends Component {
         }
     });
 
+      //MAP EVENT LISTENER
+      //event listener for dispatching actions based interaction with map geoJSON points
+      //can dispatch external events, or render elements within mapbox frame
+      //bubbles to clicked point based on specified common point 'id' (i.e. 'points' on ln 99)
+      //has access to the features/properties of the point 
           map.on('click', 'points', event => {
             const title = event.features[0].properties.title
             console.log(title)
