@@ -120,7 +120,7 @@ export default class Map extends Component {
                     },
                     "properties": {
                         "title": "Mapbox SF",
-                        "icon": "monument"
+                        "icon": "building"
                     }
                 }]
             }
