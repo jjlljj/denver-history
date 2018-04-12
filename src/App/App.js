@@ -16,23 +16,21 @@ class App extends Component {
 
   componentDidMount = async () => {
     try {
-      const response = fetch('https://denver-history.herokuapp.com/api/v1/districts/30/buildings/map');
-      const geoJSON = response.json();
+      const response = await fetch('https://denver-history.herokuapp.com/api/v1/districts/30/buildings/map');
+
+      const geoJSON = await response.json();
       this.setState({ geoJSON })
 
     } catch (error) {
       console.log(error)
     }
-    // call the db, build array of geoJSON objects for map render
-    // store array in state, pass that state to Map
-  }
 
   render() {
     const { geoJSON } = this.state;
 
     return (
       <div>
-        { geoJSON && <Map geoJSON={ geoJSON } /> }
+        { geoJSON.length && <Map geoJSON={ geoJSON } /> }
       </div>
     );
   }
