@@ -1,13 +1,13 @@
-export const mapParams = {
-  container: this.mapContainer,
+export const mapParams = (mapContainer) => ({
+  container: mapContainer,
   style: 'mapbox://styles/mapbox/light-v9',
   center: [-104.9987887, 39.7508047],
   zoom: 16,
   bearing: -17.6,
   pitch: 45
-}
+})
 
-export const 3dParams = {
+export const threedParams = {
   'id': '3d-buildings',
   'source': 'composite',
   'source-layer': 'building',
@@ -47,7 +47,7 @@ const formatPoints = data => {
   )
 }
 
-const formatGeoJSON = geoJSON => {
+export const formatGeoJSON = geoJSON => {
   return {
       "id": "points",
       "type": "symbol",

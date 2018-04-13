@@ -3,7 +3,7 @@ import mapboxgl from 'mapbox-gl'
 import  { MB_TOKEN } from '../.key' 
 import { Threebox } from 'threebox'
 import * as THREE from 'three';
-import { mapParams, 3dParams, formatGeoJSON } from '../mapHelper/mapHelper'
+import { mapParams, threedParams, formatGeoJSON } from '../mapHelper/mapHelper'
   
 export default class Map extends Component {
     
@@ -11,7 +11,7 @@ export default class Map extends Component {
     const { geoJSON } = this.props; 
 
     mapboxgl.accessToken = MB_TOKEN
-    this.map = new mapboxgl.Map(mapParams)
+    this.map = new mapboxgl.Map(mapParams(this.mapContainer))
     
     this.map.addControl(new mapboxgl.ScaleControl({ maxWidth: 80, unit: 'imperial' }));
     this.map.addControl(new mapboxgl.NavigationControl())
@@ -21,7 +21,7 @@ export default class Map extends Component {
 
     map.on('load', function() {
       const layers = map.getStyle().layers;
-      const labelLayerId;
+      let labelLayerId;
 
       for (let i = 0; i < layers.length; i++) {
           if (layers[i].type === 'symbol' && layers[i].layout['text-field']) {
@@ -30,7 +30,7 @@ export default class Map extends Component {
           }
       }
 
-      map.addLayer(3dParams, labelLayerId);
+      map.addLayer(threedParams, labelLayerId);
       map.addLayer(formatGeoJSON(geoJSON));
         
       map.on('click', 'points', event => {
