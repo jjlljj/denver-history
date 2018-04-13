@@ -1,6 +1,7 @@
 export const mapParams = (mapContainer) => ({
   container: mapContainer,
   style: 'mapbox://styles/mapbox/light-v9',
+  //  maxbounds: [lng, lat],
   center: [-104.9987887, 39.7508047],
   zoom: 16,
   bearing: -17.6,
