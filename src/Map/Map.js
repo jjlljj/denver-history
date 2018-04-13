@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import mapboxgl from 'mapbox-gl'
 import  { MB_TOKEN } from '../.key' 
 import { Threebox } from 'threebox'
-import * as THREE from 'three';
+//import * as THREE from 'three';
 import { mapParams, threedParams, formatGeoJSON } from '../mapHelper/mapHelper'
   
 export default class Map extends Component {
