@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import mapboxgl from 'mapbox-gl'
 import  { MB_TOKEN } from '../.key' 
 import { Threebox } from 'threebox'
-import * as THREE from 'three';
+//import * as THREE from 'three';
 import { mapParams, threedParams, formatGeoJSON } from '../mapHelper/mapHelper'
   
 export default class Map extends Component {
@@ -25,7 +25,7 @@ export default class Map extends Component {
 
       for (let i = 0; i < layers.length; i++) {
           if (layers[i].type === 'symbol' && layers[i].layout['text-field']) {
-              labelLayerId = layers[i].id;
+            labelLayerId = layers[i].id;
               break;
           }
       }
