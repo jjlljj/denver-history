@@ -43,30 +43,6 @@ export default class Map extends Component {
         const threebox = new Threebox(map);
         threebox.setupDefaultLights();
 
-      // STATION RENDER -> USES COLLADA LOADER -> NOT WORKING
-      //var loader = new ColladaLoader()
-        //loader.load("union-station/union-station.dae", function(geometry) {
-          //console.log(geometry.scene)
-
-            //geometry.scene.rotateY((90/360)*2*Math.PI);
-            //geometry.scene.rotateX((90/360)*2*Math.PI);
-          
-            //var material = new THREE.MeshPhongMaterial();
-            //material.emissive = new THREE.Color(0xffffff);
-            //material.color = new THREE.Color(0x0a0a0a);
-            //material.shading = THREE.FlatShading;
-            //material.side = THREE.DoubleSide;
-          
-            ////var material = new THREE.MeshPhongMaterial( {color: 0xaaaaff}); 
-            //var geom = new THREE.Mesh( geometry.scene, material );
-            //var position = [-105.0007, 39.7537, 100];
-
-            //console.log(geom)
-            //// Add the model to the threebox scenegraph at a specific geographic coordinate
-          //threebox.addAtCoordinate(geom, position, {scaleToLatitude: true, preScale: 2});
-        //});
-      // Instantiate a loader
-      
       // GLTF LOADER
       var loader = new GLTFLoader();
 
@@ -83,22 +59,8 @@ export default class Map extends Component {
 
         const build = new THREE.Mesh( geometry, material )
         threebox.addAtCoordinate(build, position, {scaleToLatitude: true, preScale: 1});
-      
       })
 
-      // PLANE RENDER -> USES JSON LOADER
-      // THIS WORKS
-       //var loader = new THREE.JSONLoader();
-        //loader.load("models/spacex.json", function(geometry) {
-          //console.log(geometry)
-            //geometry.rotateY((90/360)*2*Math.PI);
-            //geometry.rotateX((90/360)*2*Math.PI);
-            //var material = new THREE.MeshPhongMaterial( {color: 0xaaaaff, side: THREE.DoubleSide}); 
-            //var aircraft = new THREE.Mesh( geometry, material );
-            //var planePosition = [-105.0007, 39.7537, 100];
-         //threebox.addAtCoordinate(aircraft, planePosition, {scaleToLatitude: true, preScale: 2});
-       //});
-      
     })
   }
 
@@ -107,7 +69,6 @@ export default class Map extends Component {
       return false
     }
   }
-
 
   componentWillUnmount() {
     this.map.remove();
