@@ -71,10 +71,12 @@ export default class Map extends Component {
       var loader = new GLTFLoader();
 
       loader.load("models/unionStation.gltf", gltf => {
-        const building = gltf.scene
-        console.log(building)
-        //building.rotateY((90/360)*2*Math.PI);
-        //building.rotateX((90/360)*2*Math.PI);
+        const building = gltf.scene.children[0].children[0].children[0]
+
+        console.log('gltf',gltf)
+        console.log('building', building)
+        building.rotateY((90/360)*2*Math.PI);
+        building.rotateX((90/360)*2*Math.PI);
         // var material = new THREE.MeshPhongMaterial( {color: 0xaaaaff, side: THREE.DoubleSide}); 
         var position = [-105.0007, 39.7537, 100];
 
@@ -83,18 +85,16 @@ export default class Map extends Component {
       })
 
       // PLANE RENDER -> USES JSON LOADER
-      // var loader = new THREE.JSONLoader();
-      //  loader.load("models/boeing747-400-jw.json", function(geometry) {
-          //console.log(geometry)
-            //geometry.rotateY((90/360)*2*Math.PI);
-            //geometry.rotateX((90/360)*2*Math.PI);
-            //var material = new THREE.MeshPhongMaterial( {color: 0xaaaaff, side: THREE.DoubleSide}); 
-            //var aircraft = new THREE.Mesh( geometry, material );
-            //var planePosition = [-105.0007, 39.7537, 100];
-          //console.log(aircraft)
-            // Add the model to the threebox scenegraph at a specific geographic coordinate
-          //threebox.addAtCoordinate(aircraft, planePosition, {scaleToLatitude: true, preScale: 2});
-      // });
+      // THIS WORKS
+       var loader = new THREE.JSONLoader();
+        loader.load("models/boeing747-400-jw.json", function(geometry) {
+            geometry.rotateY((90/360)*2*Math.PI);
+            geometry.rotateX((90/360)*2*Math.PI);
+            var material = new THREE.MeshPhongMaterial( {color: 0xaaaaff, side: THREE.DoubleSide}); 
+            var aircraft = new THREE.Mesh( geometry, material );
+            var planePosition = [-105.0007, 39.7537, 100];
+         threebox.addAtCoordinate(aircraft, planePosition, {scaleToLatitude: true, preScale: 2});
+       });
       
     })
   }
