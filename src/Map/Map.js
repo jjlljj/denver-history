@@ -1,10 +1,12 @@
-import React, { Component } from 'react'
-import mapboxgl from 'mapbox-gl'
-import  { MB_TOKEN } from '../.key' 
-import { Threebox } from 'threebox'
-//import * as THREE from 'three';
+import React, { Component } from 'react';
+import mapboxgl from 'mapbox-gl';
+import  { MB_TOKEN } from '../.key' ;
+import { Threebox } from 'threebox';
+import ColladaLoader from 'three-collada-loader';
+import * as THREE from 'three';
 import { mapParams, threedParams, formatGeoJSON } from '../mapHelper/mapHelper'
-  
+import GLTFLoader from 'three-gltf-loader' 
+
 export default class Map extends Component {
     
   componentDidMount() {
@@ -37,9 +39,36 @@ export default class Map extends Component {
         const title = event.features[0].properties.title
         console.log(title)
       })
+
+        const threebox = new Threebox(map);
+        threebox.setupDefaultLights();
+
+      // GLTF LOADER
+      var loader = new GLTFLoader();
+
+      loader.load("models/unionStation.gltf", gltf => {
+        const bufferGeometry = gltf.scene.children[0].children[1].children[0].geometry
+        
+        const geometry = new THREE.Geometry().fromBufferGeometry( bufferGeometry )
+
+        geometry.rotateY((90/360)*4*Math.PI);
+        geometry.rotateX((90/360)*2*Math.PI);
+
+        var material = new THREE.MeshPhongMaterial( {color: 0xaaaaff, side: THREE.DoubleSide}); 
+        var position = [-105.0007, 39.7537, 0];
+
+        const build = new THREE.Mesh( geometry, material )
+        threebox.addAtCoordinate(build, position, {scaleToLatitude: true, preScale: 1});
+      })
+
     })
   }
 
+  shouldComponentUpdate = (nextProps, nextState) => {
+    if (this.map) {
+      return false
+    }
+  }
 
   componentWillUnmount() {
     this.map.remove();
