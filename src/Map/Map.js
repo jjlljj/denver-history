@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import mapboxgl from 'mapbox-gl'
 import  { MB_TOKEN } from '../.key' 
 import { Threebox } from 'threebox'
-//import * as THREE from 'three';
+import * as THREE from 'three';
 import { mapParams, threedParams, formatGeoJSON } from '../mapHelper/mapHelper'
   
 export default class Map extends Component {
@@ -37,6 +37,20 @@ export default class Map extends Component {
         const title = event.features[0].properties.title
         console.log(title)
       })
+
+        const threebox = new Threebox(map);
+        threebox.setupDefaultLights();
+
+      var loader = new THREE.JSONLoader();
+        loader.load("models/boeing747-400-jw.json", function(geometry) {
+            geometry.rotateY((90/360)*2*Math.PI);
+            geometry.rotateX((90/360)*2*Math.PI);
+            var material = new THREE.MeshPhongMaterial( {color: 0xaaaaff, side: THREE.DoubleSide}); 
+            var aircraft = new THREE.Mesh( geometry, material );
+            var planePosition = [-105.0007, 39.7537, 100];
+            // Add the model to the threebox scenegraph at a specific geographic coordinate
+            threebox.addAtCoordinate(aircraft, planePosition, {scaleToLatitude: true, preScale: 2});
+        });
     })
   }
 
