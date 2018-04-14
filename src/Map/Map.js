@@ -66,6 +66,12 @@ export default class Map extends Component {
     })
   }
 
+  shouldComponentUpdate = (nextProps, nextState) => {
+    if (this.map) {
+      return false
+    }
+  }
+
 
   componentWillUnmount() {
     this.map.remove();
