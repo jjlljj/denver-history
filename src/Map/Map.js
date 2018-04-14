@@ -5,7 +5,8 @@ import { Threebox } from 'threebox';
 import ColladaLoader from 'three-collada-loader';
 import * as THREE from 'three';
 import { mapParams, threedParams, formatGeoJSON } from '../mapHelper/mapHelper'
-  
+import GLTFLoader from 'three-gltf-loader' 
+
 export default class Map extends Component {
     
   componentDidMount() {
@@ -42,27 +43,59 @@ export default class Map extends Component {
         const threebox = new Threebox(map);
         threebox.setupDefaultLights();
 
-      var loader = new ColladaLoader()
-        loader.load("union-station/union-station.dae", function(geometry) {
-          console.log(geometry.scene)
+      // STATION RENDER -> USES COLLADA LOADER -> NOT WORKING
+      //var loader = new ColladaLoader()
+        //loader.load("union-station/union-station.dae", function(geometry) {
+          //console.log(geometry.scene)
 
-            geometry.scene.rotateY((90/360)*2*Math.PI);
-            geometry.scene.rotateX((90/360)*2*Math.PI);
+            //geometry.scene.rotateY((90/360)*2*Math.PI);
+            //geometry.scene.rotateX((90/360)*2*Math.PI);
           
-            var material = new THREE.MeshPhongMaterial();
-            material.emissive = new THREE.Color(0xffffff);
-            material.color = new THREE.Color(0x0a0a0a);
-            material.shading = THREE.FlatShading;
-            material.side = THREE.DoubleSide;
+            //var material = new THREE.MeshPhongMaterial();
+            //material.emissive = new THREE.Color(0xffffff);
+            //material.color = new THREE.Color(0x0a0a0a);
+            //material.shading = THREE.FlatShading;
+            //material.side = THREE.DoubleSide;
           
-            //var material = new THREE.MeshPhongMaterial( {color: 0xaaaaff}); 
-            var geom = new THREE.Mesh( geometry.scene, material );
-            var position = [-105.0007, 39.7537, 100];
+            ////var material = new THREE.MeshPhongMaterial( {color: 0xaaaaff}); 
+            //var geom = new THREE.Mesh( geometry.scene, material );
+            //var position = [-105.0007, 39.7537, 100];
 
-            console.log(geom)
+            //console.log(geom)
+            //// Add the model to the threebox scenegraph at a specific geographic coordinate
+          //threebox.addAtCoordinate(geom, position, {scaleToLatitude: true, preScale: 2});
+        //});
+      // Instantiate a loader
+      
+      // GLTF LOADER
+      var loader = new GLTFLoader();
+
+      loader.load("models/unionStation.gltf", gltf => {
+        const building = gltf.scene
+        console.log(building)
+        //building.rotateY((90/360)*2*Math.PI);
+        //building.rotateX((90/360)*2*Math.PI);
+        // var material = new THREE.MeshPhongMaterial( {color: 0xaaaaff, side: THREE.DoubleSide}); 
+        var position = [-105.0007, 39.7537, 100];
+
+        //const building = new THREE.Mesh( geometry, material )
+        threebox.addAtCoordinate(building, position, {scaleToLatitude: true, preScale: 2});
+      })
+
+      // PLANE RENDER -> USES JSON LOADER
+      // var loader = new THREE.JSONLoader();
+      //  loader.load("models/boeing747-400-jw.json", function(geometry) {
+          //console.log(geometry)
+            //geometry.rotateY((90/360)*2*Math.PI);
+            //geometry.rotateX((90/360)*2*Math.PI);
+            //var material = new THREE.MeshPhongMaterial( {color: 0xaaaaff, side: THREE.DoubleSide}); 
+            //var aircraft = new THREE.Mesh( geometry, material );
+            //var planePosition = [-105.0007, 39.7537, 100];
+          //console.log(aircraft)
             // Add the model to the threebox scenegraph at a specific geographic coordinate
-            threebox.addAtCoordinate(geom, position, {scaleToLatitude: true, preScale: 2});
-        });
+          //threebox.addAtCoordinate(aircraft, planePosition, {scaleToLatitude: true, preScale: 2});
+      // });
+      
     })
   }
 
