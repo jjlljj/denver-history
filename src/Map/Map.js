@@ -71,30 +71,33 @@ export default class Map extends Component {
       var loader = new GLTFLoader();
 
       loader.load("models/unionStation.gltf", gltf => {
-        const building = gltf.scene.children[0].children[0].children[0]
+        const bufferGeometry = gltf.scene.children[0].children[1].children[0].geometry
+        
+        const geometry = new THREE.Geometry().fromBufferGeometry( bufferGeometry )
 
-        console.log('gltf',gltf)
-        console.log('building', building)
-        building.rotateY((90/360)*2*Math.PI);
-        building.rotateX((90/360)*2*Math.PI);
-        // var material = new THREE.MeshPhongMaterial( {color: 0xaaaaff, side: THREE.DoubleSide}); 
-        var position = [-105.0007, 39.7537, 100];
+        geometry.rotateY((90/360)*4*Math.PI);
+        geometry.rotateX((90/360)*2*Math.PI);
 
-        //const building = new THREE.Mesh( geometry, material )
-        threebox.addAtCoordinate(building, position, {scaleToLatitude: true, preScale: 2});
+        var material = new THREE.MeshPhongMaterial( {color: 0xaaaaff, side: THREE.DoubleSide}); 
+        var position = [-105.0007, 39.7537, 0];
+
+        const build = new THREE.Mesh( geometry, material )
+        threebox.addAtCoordinate(build, position, {scaleToLatitude: true, preScale: 1});
+      
       })
 
       // PLANE RENDER -> USES JSON LOADER
       // THIS WORKS
-       var loader = new THREE.JSONLoader();
-        loader.load("models/boeing747-400-jw.json", function(geometry) {
-            geometry.rotateY((90/360)*2*Math.PI);
-            geometry.rotateX((90/360)*2*Math.PI);
-            var material = new THREE.MeshPhongMaterial( {color: 0xaaaaff, side: THREE.DoubleSide}); 
-            var aircraft = new THREE.Mesh( geometry, material );
-            var planePosition = [-105.0007, 39.7537, 100];
-         threebox.addAtCoordinate(aircraft, planePosition, {scaleToLatitude: true, preScale: 2});
-       });
+       //var loader = new THREE.JSONLoader();
+        //loader.load("models/spacex.json", function(geometry) {
+          //console.log(geometry)
+            //geometry.rotateY((90/360)*2*Math.PI);
+            //geometry.rotateX((90/360)*2*Math.PI);
+            //var material = new THREE.MeshPhongMaterial( {color: 0xaaaaff, side: THREE.DoubleSide}); 
+            //var aircraft = new THREE.Mesh( geometry, material );
+            //var planePosition = [-105.0007, 39.7537, 100];
+         //threebox.addAtCoordinate(aircraft, planePosition, {scaleToLatitude: true, preScale: 2});
+       //});
       
     })
   }
