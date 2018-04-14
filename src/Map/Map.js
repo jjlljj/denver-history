@@ -43,13 +43,23 @@ export default class Map extends Component {
         threebox.setupDefaultLights();
 
       var loader = new ColladaLoader()
-        loader.load("models/union-station.dae", function(geometry) {
-          console.log(geometry)
-            //geometry.rotateY((90/360)*2*Math.PI);
-            //geometry.rotateX((90/360)*2*Math.PI);
-            var material = new THREE.MeshPhongMaterial( {color: 0xaaaaff, side: THREE.DoubleSide}); 
-            var geom = new THREE.Mesh( geometry, material );
+        loader.load("union-station/union-station.dae", function(geometry) {
+          console.log(geometry.scene)
+
+            geometry.scene.rotateY((90/360)*2*Math.PI);
+            geometry.scene.rotateX((90/360)*2*Math.PI);
+          
+            var material = new THREE.MeshPhongMaterial();
+            material.emissive = new THREE.Color(0xffffff);
+            material.color = new THREE.Color(0x0a0a0a);
+            material.shading = THREE.FlatShading;
+            material.side = THREE.DoubleSide;
+          
+            //var material = new THREE.MeshPhongMaterial( {color: 0xaaaaff}); 
+            var geom = new THREE.Mesh( geometry.scene, material );
             var position = [-105.0007, 39.7537, 100];
+
+            console.log(geom)
             // Add the model to the threebox scenegraph at a specific geographic coordinate
             threebox.addAtCoordinate(geom, position, {scaleToLatitude: true, preScale: 2});
         });
