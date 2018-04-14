@@ -13,6 +13,7 @@
     "react-scripts": "1.1.4",
     "redux": "^3.7.2",
     "three": "^0.91.0",
+    "three-collada-loader": "0.0.1",
     "threebox": "^0.1.5"
   },
   "scripts": {
