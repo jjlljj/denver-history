@@ -34,7 +34,7 @@ class App extends Component {
     return (
       <div>
         <Header />
-        <section>
+        <section className="sidebar-map-wrap">
           <Sidebar />
           { geoJSON.length && <Map geoJSON={ geoJSON } /> }
 

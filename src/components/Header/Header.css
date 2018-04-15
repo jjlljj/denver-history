@@ -1,0 +1,11 @@
+.site-header {
+  align-items: center;
+  background: green;
+  display: flex;
+  height: 60px;
+  justify-content: center;
+}
+
+.site-header {
+  font-size: 30px;
+}

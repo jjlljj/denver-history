@@ -12,9 +12,9 @@ export default class Header extends Component {
 
   render() {
     return (
-      <div>
-        i am Header
-      </div>
+      <header className="site-header">
+        <h1>Denver History</h1>
+      </header>
     )
   }
 }
