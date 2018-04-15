@@ -76,15 +76,10 @@ export default class Map extends Component {
   }
 
   render() {
-    const style = {
-        position: 'absolute',
-        top: 0,
-        bottom: 0,
-        width: '100%'
-    };
       
     return (
-      <div style={style} ref={el => this.mapContainer = el} >
+      <div class="map-wrap">
+        <div id="map" ref={el => this.mapContainer = el} ></div>
       </div>
     )
   };
