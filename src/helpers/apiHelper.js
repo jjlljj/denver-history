@@ -12,8 +12,14 @@ export const apiGet = async url => {
   }
 }
 
-export const getDistrictBuildings = async districtNum => {
-  const url = `https://denver-history.herokuapp.com/api/v1/districts/${districtNum}/buildings/map`;
+export const getDistrictBuildings = async districtId => {
+  const url = `https://denver-history.herokuapp.com/api/v1/districts/${districtId}/buildings/map`;
+
+  return await apiGet(url);
+}
+
+export const getBuilding = async buildingId => {
+  const url = `https://denver-history.herokuapp.com/api/v1/buildings/${buildingId}`;
 
   return await apiGet(url);
 }
