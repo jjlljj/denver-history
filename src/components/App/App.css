@@ -1,4 +1,6 @@
 .main-wrap {
   display: flex;
+  height: 90vh;
   justify-content: space-between;
+  min-height: 400px;
 }
