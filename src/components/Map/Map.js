@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import mapboxgl from 'mapbox-gl';
 import  { MB_TOKEN } from '../../.key' ;
 import { Threebox } from 'threebox';
@@ -7,7 +8,7 @@ import * as THREE from 'three';
 import { mapParams, threedParams, formatGeoJSON } from '../../helpers/mapHelper';
 import GLTFLoader from 'three-gltf-loader' 
 
-export default class Map extends Component {
+export class Map extends Component {
     
   componentDidMount() {
     const { geoJSON } = this.props; 
@@ -84,3 +85,5 @@ export default class Map extends Component {
     )
   };
 }
+
+export default connect(null, null)(Map)
