@@ -6,6 +6,7 @@ import { Threebox } from 'threebox';
 import * as THREE from 'three';
 import { mapParams, threedParams, formatGeoJSON } from '../../helpers/mapHelper';
 import GLTFLoader from 'three-gltf-loader' 
+import './Map.css';
 
 export class Map extends Component {
     
@@ -78,7 +79,7 @@ export class Map extends Component {
   render() {
       
     return (
-      <div class="map-wrap">
+      <div className="map-wrap">
         <div id="map" ref={el => this.mapContainer = el} ></div>
       </div>
     )

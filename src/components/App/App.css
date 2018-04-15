@@ -1,3 +1,4 @@
-.sidebar-map-wrap {
+.main-wrap {
   display: flex;
+  justify-content: space-between;
 }
