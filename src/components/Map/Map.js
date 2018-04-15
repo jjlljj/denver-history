@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import mapboxgl from 'mapbox-gl';
-import  { MB_TOKEN } from '../.key' ;
+import  { MB_TOKEN } from '../../.key' ;
 import { Threebox } from 'threebox';
-import ColladaLoader from 'three-collada-loader';
 import * as THREE from 'three';
-import { mapParams, threedParams, formatGeoJSON } from '../mapHelper/mapHelper';
+import { mapParams, threedParams, formatGeoJSON } from '../../helpers/mapHelper';
 import GLTFLoader from 'three-gltf-loader' 
+import './Map.css';
 
-export default class Map extends Component {
+export class Map extends Component {
     
   componentDidMount() {
     const { geoJSON } = this.props; 
@@ -76,16 +77,13 @@ export default class Map extends Component {
   }
 
   render() {
-    const style = {
-        position: 'absolute',
-        top: 0,
-        bottom: 0,
-        width: '100%'
-    };
       
     return (
-      <div style={style} ref={el => this.mapContainer = el} >
+      <div className="map-wrap">
+        <div id="map" ref={el => this.mapContainer = el} ></div>
       </div>
     )
   };
 }
+
+export default connect(null, null)(Map)

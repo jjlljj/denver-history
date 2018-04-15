@@ -1,17 +1,19 @@
 import React, { Component } from 'react';
 import './App.css';
-import Map from '../Map/Map'
+import Map from '../Map/Map';
+import Header from '../Header/Header';
+import Sidebar from '../Sidebar/Sidebar';
 
 class App extends Component {
   constructor() {
-    super()
+    super();
     this.state = {
       geoJSON: []
-    }
+    };
   }
 
   handleEvent = event => {
-   console.log(event) 
+   console.log(event);
   }
 
   componentDidMount = async () => {
@@ -19,11 +21,11 @@ class App extends Component {
       const response = await fetch('https://denver-history.herokuapp.com/api/v1/districts/30/buildings/map');
 
       const geoJSON = await response.json();
-      this.setState({ geoJSON })
+      this.setState({ geoJSON });
 
     } catch (error) {
-      console.log(error)
-    }
+      console.log(error);
+    };
   }
 
   render() {
@@ -31,8 +33,13 @@ class App extends Component {
 
     return (
       <div>
-        { geoJSON.length && <Map geoJSON={ geoJSON } /> }
-      </div>
+        <Header />
+        <section className="main-wrap">
+          <Sidebar />
+          { geoJSON.length && <Map geoJSON={ geoJSON } /> }
+
+        </section>
+    </div>
     );
   }
 }
