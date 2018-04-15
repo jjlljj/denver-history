@@ -48,7 +48,11 @@ table {
 }
 
 /* reset button styling outlines */
-button, input, textarea, select {
+button, input, textarea, select, div {
+  outline: none;
+}
+
+div:focus, canvas:focus {
   outline: none;
 }
 
