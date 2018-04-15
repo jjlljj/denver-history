@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import mapboxgl from 'mapbox-gl';
-import  { MB_TOKEN } from '../.key' ;
+import  { MB_TOKEN } from '../../.key' ;
 import { Threebox } from 'threebox';
 import ColladaLoader from 'three-collada-loader';
 import * as THREE from 'three';
-import { mapParams, threedParams, formatGeoJSON } from '../mapHelper/mapHelper';
+import { mapParams, threedParams, formatGeoJSON } from '../../helpers/mapHelper';
 import GLTFLoader from 'three-gltf-loader' 
 
 export default class Map extends Component {
