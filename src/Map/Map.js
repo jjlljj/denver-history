@@ -53,9 +53,10 @@ export default class Map extends Component {
 
         geometry.rotateY((90/360)*4*Math.PI);
         geometry.rotateX((90/360)*2*Math.PI);
+        console.log(geometry)
 
         var material = new THREE.MeshPhongMaterial( {color: 0xaaaaff, side: THREE.DoubleSide}); 
-        var position = [-105.0007, 39.7537, 0];
+        var position = [-105.00006, 39.75317, 0];
 
         const build = new THREE.Mesh( geometry, material )
         threebox.addAtCoordinate(build, position, {scaleToLatitude: true, preScale: 1});
