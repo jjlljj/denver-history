@@ -1,8 +1,6 @@
 .map-wrap {
   position: relative;
-  min-height: 400px;
-  height: 90vh;
-  flex-grow: 1;
+  flex-grow: 2;
 }
 
 #map {

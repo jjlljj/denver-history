@@ -1,0 +1,15 @@
+.sidebar {
+  width: 340px;
+  overflow-y: scroll;
+}
+
+.banner-img-wrap img{
+  overflow-y: hidden;
+  width: 100%;
+}
+
+.content-wrap h2,
+.content-wrap ul,
+.content-wrap p {
+  margin: 20px;
+}
