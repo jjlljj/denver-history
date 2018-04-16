@@ -73,14 +73,14 @@ export class Map extends Component {
     });
   }
 
-  handleBuildingClick = buildingId => {
-    console.log(buildingId)
+  handleBuildingClick = async (buildingId) => {
+    try {
+      const response = await getBuilding(buildingId)
 
-    //try {
-      //const response = await getBuilding(buildingId)
-    //const { id } = this.props.building
-    // if (id !== buildingId) 
-    //this.props.addBuilding(buildingId)
+      this.props.addBuilding(response[0])
+    } catch (error) {
+      console.log(error)
+    }
   }
 
   shouldComponentUpdate = (nextProps, nextState) => {
