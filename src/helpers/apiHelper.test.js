@@ -16,6 +16,7 @@ describe('apiHelper', () => {
 
     it('should call fetch with the expected params', () => {
       const expected = mockUrl
+      expect(window.fetch).not.toHaveBeenCalled()
 
       apiGet(mockUrl)
       expect(window.fetch).toHaveBeenCalledWith(expected)
@@ -50,6 +51,7 @@ describe('apiHelper', () => {
 
     it('should call fetch with the expected params', () => {
       const expected = 'https://denver-history.herokuapp.com/api/v1/districts/3/buildings/map'
+      expect(window.fetch).not.toHaveBeenCalled()
 
       getDistrictBuildings(3)
       expect(window.fetch).toHaveBeenCalledWith(expected)
@@ -85,6 +87,7 @@ describe('apiHelper', () => {
 
     it('should call fetch with the expected params', () => {
       const expected = 'https://denver-history.herokuapp.com/api/v1/buildings/603'
+      expect(window.fetch).not.toHaveBeenCalled()
 
       getBuilding(603)
       expect(window.fetch).toHaveBeenCalledWith(expected)
