@@ -7,7 +7,6 @@ import { hideSidebar } from '../../actions'
 export class Sidebar extends Component {
 
   handleHideSidebar = () => {
-    console.log('boop')
     this.props.hideSidebar()
   }
 
@@ -19,7 +18,7 @@ export class Sidebar extends Component {
     return (
       <section className={`sidebar ${displayStatus}`} >
         <div className="banner-img-wrap">
-          <div className="hide-sidebar-btn" onClick={this.handleHideSidebar} >{'<<'}</div>
+          <div className="hide-sidebar-btn" onClick={this.handleHideSidebar} >&#x276E;&#x276E;</div>
           <img src={`http://denver-history.herokuapp.com/images/${photo_link}`} />
         </div>
         <div className="content-wrap">

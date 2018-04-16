@@ -1,6 +1,7 @@
 .sidebar {
   overflow-y: scroll;
   position: relative;
+  max-width: 340px;
   width: 40vw;
 }
 
@@ -12,15 +13,26 @@
 }
 
 .sidebar-hidden {
-  display: none;
+  overflow: hidden;
+  transition: flex 0.3s ease-out;
+  transition-delay: 0.1s;
+  flex: 0;
 }
 
 .sidebar-show {
   display: auto;
+  transition: flex 0.3s ease-out;
+  transition-delay: 0.1s;
+  flex: 1;
+}
+
+.banner-img-wrap {
+  min-height: 200px;
 }
 
 .banner-img-wrap img{
   overflow-y: hidden;
+  min-width: 240px;
   width: 100%;
 }
 
