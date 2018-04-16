@@ -10,7 +10,7 @@ import  { MB_TOKEN } from '../../.key' ;
 
 import { mapParams, threedParams, formatGeoJSON } from '../../helpers/mapHelper';
 import { getBuilding } from '../../helpers/apiHelper'; 
-import { addBuilding } from '../../actions';
+import { addBuilding, showSidebar } from '../../actions';
 
 export class Map extends Component {
     
@@ -78,6 +78,7 @@ export class Map extends Component {
       const response = await getBuilding(buildingId)
 
       this.props.addBuilding(response[0])
+      this.props.showSidebar()
     } catch (error) {
       console.log(error)
     }
@@ -104,7 +105,8 @@ export class Map extends Component {
 }
 
 const mapDispatchToProps = dispatch => ({
-  addBuilding: building => dispatch(addBuilding(building))
+  addBuilding: building => dispatch(addBuilding(building)),
+  showSidebar: () => dispatch(showSidebar())
 })
 
 export default connect(null, mapDispatchToProps)(Map)
