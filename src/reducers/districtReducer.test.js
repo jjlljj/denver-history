@@ -1,6 +1,7 @@
 /* eslint-disable */
 import { districtReducer } from './districtReducer'
 import * as actions from '../actions/index'
+import { mockDistrict } from '../__mocks__/mockData'
 
 describe('districtReducer', () => {
 
@@ -8,9 +9,18 @@ describe('districtReducer', () => {
     expect(districtReducer(undefined, {})).toEqual([])
   })
 
-  it('', () => {
+  it('ADD_DISTRICT should return the building object', () => {
+    const action = actions.addBuilding(mockDistrict)
+    const expected = mockDistrict
 
+    expect(districtReducer(undefined, action)).toEqual(expected)
   })
 
+  it('ADD_DISTRICT should return the building object', () => {
+    const action = actions.clearDistrict()
+    const expected = []
+
+    expect(districtReducer(undefined, action)).toEqual(expected)
+  })
 
 })
