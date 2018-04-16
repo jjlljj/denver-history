@@ -75,6 +75,9 @@ export class Map extends Component {
 
   handleBuildingClick = buildingId => {
     console.log(buildingId)
+
+    try {
+      const response = await getBuilding(buildingId)
     //const { id } = this.props.building
     // if (id !== buildingId) 
     //this.props.addBuilding(buildingId)
