@@ -1,17 +1,22 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import './Map.css';
+
 import mapboxgl from 'mapbox-gl';
-import  { MB_TOKEN } from '../../.key' ;
 import { Threebox } from 'threebox';
 import * as THREE from 'three';
+import GLTFLoader from 'three-gltf-loader';
+import  { MB_TOKEN } from '../../.key' ;
+
 import { mapParams, threedParams, formatGeoJSON } from '../../helpers/mapHelper';
-import GLTFLoader from 'three-gltf-loader' 
-import './Map.css';
+import { getBuilding } from '../../helpers/apiHelper'; 
+import { addBuilding } from '../../actions';
 
 export class Map extends Component {
     
   componentDidMount() {
     const { geoJSON } = this.props; 
+    const { handleBuildingClick } = this
 
     mapboxgl.accessToken = MB_TOKEN;
     this.map = new mapboxgl.Map(mapParams(this.mapContainer));
@@ -37,13 +42,15 @@ export class Map extends Component {
       map.addLayer(formatGeoJSON(geoJSON));
         
       map.on('click', 'points', event => {
-        const title = event.features[0].properties.title;
-        console.log(title);
+        const { id } = event.features[0].properties;
+        console.log(id)
+        handleBuildingClick(id);
       });
 
         const threebox = new Threebox(map);
         threebox.setupDefaultLights();
 
+    
       // GLTF LOADER
       const loader = new GLTFLoader();
 
@@ -66,6 +73,13 @@ export class Map extends Component {
     });
   }
 
+  handleBuildingClick = buildingId => {
+    console.log(buildingId)
+    //const { id } = this.props.building
+    // if (id !== buildingId) 
+    //this.props.addBuilding(buildingId)
+  }
+
   shouldComponentUpdate = (nextProps, nextState) => {
     if (this.map) {
       return false;
@@ -86,4 +100,8 @@ export class Map extends Component {
   };
 }
 
-export default connect(null, null)(Map)
+const mapDispatchToProps = dispatch => ({
+  addBuilding: building => dispatch(addBuilding(building))
+})
+
+export default connect(null, mapDispatchToProps)(Map)

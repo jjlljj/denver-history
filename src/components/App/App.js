@@ -46,6 +46,4 @@ const mapDispatchToProps = dispatch => ({
   addDistrict: district => dispatch(addDistrict(district))
 })
 
-
-
 export default connect(mapStateToProps, mapDispatchToProps)(App);
