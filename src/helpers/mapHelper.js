@@ -1,6 +1,6 @@
 export const mapParams = (mapContainer) => ({
   container: mapContainer,
-  style: 'mapbox://styles/mapbox/light-v9',
+  style: 'mapbox://styles/nogully/cjg2lpcwt61xp2rmenlcq9ce2',
   //  maxbounds: [lng, lat],
   center: [-104.994813, 39.7452204],
   zoom: 16,
@@ -14,9 +14,9 @@ export const threedParams = {
   'source-layer': 'building',
   'filter': ['==', 'extrude', 'true'],
   'type': 'fill-extrusion',
-  'minzoom': 15,
+  'minzoom': 10,
   'paint': {
-      'fill-extrusion-color': '#aaa',
+      'fill-extrusion-color': '#fff',
       'fill-extrusion-height': [
           "interpolate", ["linear"], ["zoom"],
           15, 0,
@@ -27,7 +27,7 @@ export const threedParams = {
           15, 0,
           15.05, ["get", "min_height"]
       ],
-      'fill-extrusion-opacity': .6
+      'fill-extrusion-opacity': .3
   }
 }
 
