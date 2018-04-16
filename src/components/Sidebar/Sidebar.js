@@ -42,11 +42,12 @@ export class Sidebar extends Component {
   // add building's 'id' to that action
 
   render() {
-    const { ldmk_name, year_built, address_line1, photo_link, description } = this.state.building
+    const { ldmk_name, year_built, address_line1, photo_link, description } = this.props.building
+    console.log(photo_link)
     return (
       <section className="sidebar">
         <div className="banner-img-wrap">
-          <img src={photo_link} />
+          <img src={`http://denver-history.herokuapp.com/images/${photo_link}`} />
         </div>
         <div className="content-wrap">
           <h2>{ ldmk_name }</h2>
@@ -61,4 +62,8 @@ export class Sidebar extends Component {
   }
 }
 
-export default connect(null, null)(Sidebar)
+const mapStateToProps = ({ building }) => ({
+  building
+})
+
+export default connect(mapStateToProps, null)(Sidebar)
