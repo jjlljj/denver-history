@@ -9,7 +9,7 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      geoJSON: []
+      district: []
     };
   }
 
@@ -19,22 +19,22 @@ class App extends Component {
 
   fetchBuildings = async () => {
     try {
-      const geoJSON = await getDistrictBuildings(30)
-      this.setState({ geoJSON });
+      const district = await getDistrictBuildings(30)
+      this.setState({ district });
     } catch (error) {
       console.log(error);
     };
   }
 
   render() {
-    const { geoJSON } = this.state;
+    const { district } = this.state;
 
     return (
       <div>
         <Header />
         <section className="main-wrap">
           <Sidebar />
-          { geoJSON.length && <Map geoJSON={ geoJSON } /> }
+          { district.length && <Map geoJSON={ district } /> }
         </section>
     </div>
     );
