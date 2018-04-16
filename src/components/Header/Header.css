@@ -1,11 +1,13 @@
 .site-header {
   align-items: center;
-  background: green;
+  background: #1F1A38;
   display: flex;
   height: 60px;
   justify-content: center;
 }
 
 .site-header {
-  font-size: 30px;
+  color: #f6f6f4;
+  font-size: 2rem;
+  font-family: 'Berkshire Swash', cursive;
 }
