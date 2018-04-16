@@ -16,7 +16,7 @@ export class App extends Component {
 
   fetchBuildings = async () => {
     try {
-      const district = await getDistrictBuildings(30)
+      const district = await getDistrictBuildings(3)
       this.props.addDistrict(district);
     } catch (error) {
       console.log(error);
