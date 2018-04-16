@@ -38,12 +38,9 @@ export class Sidebar extends Component {
     };
   }
 
-  // building data fetch
-  // add building's 'id' to that action
-
   render() {
     const { ldmk_name, year_built, address_line1, photo_link, description } = this.props.building
-    console.log(photo_link)
+
     return (
       <section className="sidebar">
         <div className="banner-img-wrap">
