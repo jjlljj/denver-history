@@ -15,3 +15,11 @@ export const addDistrict = district => ({
 export const clearDistrict = () => ({
   type: 'CLEAR_DISTRICT'
 });
+
+export const showSidebar = () => ({
+  type: 'SHOW_SIDEBAR'
+});
+
+export const hideSidebar = () => ({
+  type: 'HIDE_SIDEBAR'
+});

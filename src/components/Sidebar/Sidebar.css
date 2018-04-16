@@ -3,6 +3,10 @@
   overflow-y: scroll;
 }
 
+.sidebar-hidden {
+  display: none;
+}
+
 .banner-img-wrap img{
   overflow-y: hidden;
   width: 100%;
