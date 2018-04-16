@@ -21,10 +21,9 @@ describe('actions', () => {
   it('ADD_DISTRICT should return the building with a type of ADD_DISTRICT', () => {
     const expected = {
       type: 'ADD_DISTRICT',
-      mockDistrict
+      district: mockDistrict
     }
     expect(actions.addDistrict(mockDistrict)).toEqual(expected)
-    expect(false).toEqual(true)
   })
 
   it('CLEAR_DISTRICT should return a type of CLEAR_DISTRICT', () => {
@@ -32,5 +31,19 @@ describe('actions', () => {
       type: 'CLEAR_DISTRICT'
     }
     expect(actions.clearDistrict()).toEqual(expected)
+  })
+
+  it('SHOW_SIDEBAR should return a type of SHOW_SIDEBAR', () => {
+    const expected = {
+      type: 'SHOW_SIDEBAR'
+    }
+    expect(actions.showSidebar()).toEqual(expected)
+  })
+
+  it('HIDE_SIDEBAR should return a type of HIDE_SIDEBAR', () => {
+    const expected = {
+      type: 'HIDE_SIDEBAR'
+    }
+    expect(actions.hideSidebar()).toEqual(expected)
   })
 })

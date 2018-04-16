@@ -10,7 +10,7 @@ describe('districtReducer', () => {
   })
 
   it('ADD_DISTRICT should return the building object', () => {
-    const action = actions.addBuilding(mockDistrict)
+    const action = actions.addDistrict(mockDistrict)
     const expected = mockDistrict
 
     expect(districtReducer(undefined, action)).toEqual(expected)
