@@ -1,0 +1,919 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Sidebar Should match snapshot 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Sidebar
+    building={
+        Object {
+            "address_id": null,
+            "address_line1": "1727 Tremont Street",
+            "address_line2": "1725 Tremont Place",
+            "aka_name": "Bricker Collegiate Institute",
+            "arch_bldr": null,
+            "created_at": "2018-04-11T22:00:39.855Z",
+            "description": "This iconic building was designed by Frank E. Edbrooke. It was built as a school for girls, called The Brinker Collegiate Institute after its owners, Joseph and Elizabeth Brinker. They owned and operated the school from 1880 (eventually turning it into a coeducational facility) until 1886. Forced into foreclosure after Joseph Brinker’s death, the building was sold to two of the West’s most notorious gamblers. They turned it into Hotel Richelieu, a gentleman’s club. Only six months later, the new owners lost the building in a card game to two other known gamblers, Ed Chase and Vaso Chucovich. They renamed the building “The Navarre” after King Henry Navarre (1553-1610), a devotee of decadence and high living. The building was turned into a bordello, offering public dining and private gambling on the bottom two floors, and more illicit pleasures on the top two levels. The Brown Palace Hotel was built across the street in 1892, and an underground tunnel was constructed between the two buildings to share coal. Legend says that the tunnel was also used to discreetly transport gentlemen guests between the two buildings. At some point in the past The Navarre’s entrance to the tunnel was sealed off, and the length of the tunnel possibly even filled in with masonry to prevent the street overhead from collapsing. In 1904, Denver Mayor Robert Speer was elected. Bowing to public pressure, he put an end to gambling and prostitution in Denver. The Navarre became a respectable dining club, although legend has it that illicit activity continued well into the 1920s. In the 1990s, The Navarre was renovated and restored it to its Victorian roots and the Anschutz Collection of Western American art moved in.",
+            "document": null,
+            "gis_notes": null,
+            "historic_dist": 30,
+            "id": 603,
+            "lat": "39.7447201469119",
+            "ldmk_name": "Navarre Building",
+            "ldmk_num": 21,
+            "lon": "-104.988045901496",
+            "notes": null,
+            "ord_num": 470,
+            "ord_year": 1971,
+            "photo_link": "https://anschutzcollection.org/wp-content/uploads/2017/10/Navarre_2.png",
+            "situs_dir": null,
+            "situs_num": 1725,
+            "situs_st": "Tremont",
+            "situs_type": "PL",
+            "state_hist_num": "5DV.124",
+            "updated_at": "2018-04-11T22:00:39.855Z",
+            "year_built": "1880",
+          }
+    }
+    hideSidebar={[Function]}
+    showSidebar={true}
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="banner-img-wrap"
+>
+          <div
+                    className="hide-sidebar-btn"
+                    onClick={[Function]}
+          >
+                    ❮❮
+          </div>
+          <img
+                    src="http://denver-history.herokuapp.com/images/https://anschutzcollection.org/wp-content/uploads/2017/10/Navarre_2.png"
+          />
+</div>,
+        <div
+          className="content-wrap"
+>
+          <h2>
+                    Navarre Building
+          </h2>
+          <ul>
+                    <li>
+                              Built: 
+                              1880
+                    </li>
+                    <li>
+                              Address: 
+                              1727 Tremont Street
+                    </li>
+          </ul>
+          <p>
+                    This iconic building was designed by Frank E. Edbrooke. It was built as a school for girls, called The Brinker Collegiate Institute after its owners, Joseph and Elizabeth Brinker. They owned and operated the school from 1880 (eventually turning it into a coeducational facility) until 1886. Forced into foreclosure after Joseph Brinker’s death, the building was sold to two of the West’s most notorious gamblers. They turned it into Hotel Richelieu, a gentleman’s club. Only six months later, the new owners lost the building in a card game to two other known gamblers, Ed Chase and Vaso Chucovich. They renamed the building “The Navarre” after King Henry Navarre (1553-1610), a devotee of decadence and high living. The building was turned into a bordello, offering public dining and private gambling on the bottom two floors, and more illicit pleasures on the top two levels. The Brown Palace Hotel was built across the street in 1892, and an underground tunnel was constructed between the two buildings to share coal. Legend says that the tunnel was also used to discreetly transport gentlemen guests between the two buildings. At some point in the past The Navarre’s entrance to the tunnel was sealed off, and the length of the tunnel possibly even filled in with masonry to prevent the street overhead from collapsing. In 1904, Denver Mayor Robert Speer was elected. Bowing to public pressure, he put an end to gambling and prostitution in Denver. The Navarre became a respectable dining club, although legend has it that illicit activity continued well into the 1920s. In the 1990s, The Navarre was renovated and restored it to its Victorian roots and the Anschutz Collection of Western American art moved in.
+          </p>
+</div>,
+      ],
+      "className": "sidebar sidebar-show",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="hide-sidebar-btn"
+              onClick={[Function]}
+>
+              ❮❮
+</div>,
+            <img
+              src="http://denver-history.herokuapp.com/images/https://anschutzcollection.org/wp-content/uploads/2017/10/Navarre_2.png"
+/>,
+          ],
+          "className": "banner-img-wrap",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "❮❮",
+              "className": "hide-sidebar-btn",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "❮❮",
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "src": "http://denver-history.herokuapp.com/images/https://anschutzcollection.org/wp-content/uploads/2017/10/Navarre_2.png",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "img",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h2>
+              Navarre Building
+</h2>,
+            <ul>
+              <li>
+                            Built: 
+                            1880
+              </li>
+              <li>
+                            Address: 
+                            1727 Tremont Street
+              </li>
+</ul>,
+            <p>
+              This iconic building was designed by Frank E. Edbrooke. It was built as a school for girls, called The Brinker Collegiate Institute after its owners, Joseph and Elizabeth Brinker. They owned and operated the school from 1880 (eventually turning it into a coeducational facility) until 1886. Forced into foreclosure after Joseph Brinker’s death, the building was sold to two of the West’s most notorious gamblers. They turned it into Hotel Richelieu, a gentleman’s club. Only six months later, the new owners lost the building in a card game to two other known gamblers, Ed Chase and Vaso Chucovich. They renamed the building “The Navarre” after King Henry Navarre (1553-1610), a devotee of decadence and high living. The building was turned into a bordello, offering public dining and private gambling on the bottom two floors, and more illicit pleasures on the top two levels. The Brown Palace Hotel was built across the street in 1892, and an underground tunnel was constructed between the two buildings to share coal. Legend says that the tunnel was also used to discreetly transport gentlemen guests between the two buildings. At some point in the past The Navarre’s entrance to the tunnel was sealed off, and the length of the tunnel possibly even filled in with masonry to prevent the street overhead from collapsing. In 1904, Denver Mayor Robert Speer was elected. Bowing to public pressure, he put an end to gambling and prostitution in Denver. The Navarre became a respectable dining club, although legend has it that illicit activity continued well into the 1920s. In the 1990s, The Navarre was renovated and restored it to its Victorian roots and the Anschutz Collection of Western American art moved in.
+</p>,
+          ],
+          "className": "content-wrap",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Navarre Building",
+            },
+            "ref": null,
+            "rendered": "Navarre Building",
+            "type": "h2",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <li>
+                  Built: 
+                  1880
+</li>,
+                <li>
+                  Address: 
+                  1727 Tremont Street
+</li>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Built: ",
+                    "1880",
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Built: ",
+                  "1880",
+                ],
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Address: ",
+                    "1727 Tremont Street",
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Address: ",
+                  "1727 Tremont Street",
+                ],
+                "type": "li",
+              },
+            ],
+            "type": "ul",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "This iconic building was designed by Frank E. Edbrooke. It was built as a school for girls, called The Brinker Collegiate Institute after its owners, Joseph and Elizabeth Brinker. They owned and operated the school from 1880 (eventually turning it into a coeducational facility) until 1886. Forced into foreclosure after Joseph Brinker’s death, the building was sold to two of the West’s most notorious gamblers. They turned it into Hotel Richelieu, a gentleman’s club. Only six months later, the new owners lost the building in a card game to two other known gamblers, Ed Chase and Vaso Chucovich. They renamed the building “The Navarre” after King Henry Navarre (1553-1610), a devotee of decadence and high living. The building was turned into a bordello, offering public dining and private gambling on the bottom two floors, and more illicit pleasures on the top two levels. The Brown Palace Hotel was built across the street in 1892, and an underground tunnel was constructed between the two buildings to share coal. Legend says that the tunnel was also used to discreetly transport gentlemen guests between the two buildings. At some point in the past The Navarre’s entrance to the tunnel was sealed off, and the length of the tunnel possibly even filled in with masonry to prevent the street overhead from collapsing. In 1904, Denver Mayor Robert Speer was elected. Bowing to public pressure, he put an end to gambling and prostitution in Denver. The Navarre became a respectable dining club, although legend has it that illicit activity continued well into the 1920s. In the 1990s, The Navarre was renovated and restored it to its Victorian roots and the Anschutz Collection of Western American art moved in.",
+            },
+            "ref": null,
+            "rendered": "This iconic building was designed by Frank E. Edbrooke. It was built as a school for girls, called The Brinker Collegiate Institute after its owners, Joseph and Elizabeth Brinker. They owned and operated the school from 1880 (eventually turning it into a coeducational facility) until 1886. Forced into foreclosure after Joseph Brinker’s death, the building was sold to two of the West’s most notorious gamblers. They turned it into Hotel Richelieu, a gentleman’s club. Only six months later, the new owners lost the building in a card game to two other known gamblers, Ed Chase and Vaso Chucovich. They renamed the building “The Navarre” after King Henry Navarre (1553-1610), a devotee of decadence and high living. The building was turned into a bordello, offering public dining and private gambling on the bottom two floors, and more illicit pleasures on the top two levels. The Brown Palace Hotel was built across the street in 1892, and an underground tunnel was constructed between the two buildings to share coal. Legend says that the tunnel was also used to discreetly transport gentlemen guests between the two buildings. At some point in the past The Navarre’s entrance to the tunnel was sealed off, and the length of the tunnel possibly even filled in with masonry to prevent the street overhead from collapsing. In 1904, Denver Mayor Robert Speer was elected. Bowing to public pressure, he put an end to gambling and prostitution in Denver. The Navarre became a respectable dining club, although legend has it that illicit activity continued well into the 1920s. In the 1990s, The Navarre was renovated and restored it to its Victorian roots and the Anschutz Collection of Western American art moved in.",
+            "type": "p",
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "section",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="banner-img-wrap"
+>
+            <div
+                        className="hide-sidebar-btn"
+                        onClick={[Function]}
+            >
+                        ❮❮
+            </div>
+            <img
+                        src="http://denver-history.herokuapp.com/images/https://anschutzcollection.org/wp-content/uploads/2017/10/Navarre_2.png"
+            />
+</div>,
+          <div
+            className="content-wrap"
+>
+            <h2>
+                        Navarre Building
+            </h2>
+            <ul>
+                        <li>
+                                    Built: 
+                                    1880
+                        </li>
+                        <li>
+                                    Address: 
+                                    1727 Tremont Street
+                        </li>
+            </ul>
+            <p>
+                        This iconic building was designed by Frank E. Edbrooke. It was built as a school for girls, called The Brinker Collegiate Institute after its owners, Joseph and Elizabeth Brinker. They owned and operated the school from 1880 (eventually turning it into a coeducational facility) until 1886. Forced into foreclosure after Joseph Brinker’s death, the building was sold to two of the West’s most notorious gamblers. They turned it into Hotel Richelieu, a gentleman’s club. Only six months later, the new owners lost the building in a card game to two other known gamblers, Ed Chase and Vaso Chucovich. They renamed the building “The Navarre” after King Henry Navarre (1553-1610), a devotee of decadence and high living. The building was turned into a bordello, offering public dining and private gambling on the bottom two floors, and more illicit pleasures on the top two levels. The Brown Palace Hotel was built across the street in 1892, and an underground tunnel was constructed between the two buildings to share coal. Legend says that the tunnel was also used to discreetly transport gentlemen guests between the two buildings. At some point in the past The Navarre’s entrance to the tunnel was sealed off, and the length of the tunnel possibly even filled in with masonry to prevent the street overhead from collapsing. In 1904, Denver Mayor Robert Speer was elected. Bowing to public pressure, he put an end to gambling and prostitution in Denver. The Navarre became a respectable dining club, although legend has it that illicit activity continued well into the 1920s. In the 1990s, The Navarre was renovated and restored it to its Victorian roots and the Anschutz Collection of Western American art moved in.
+            </p>
+</div>,
+        ],
+        "className": "sidebar sidebar-show",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="hide-sidebar-btn"
+                onClick={[Function]}
+>
+                ❮❮
+</div>,
+              <img
+                src="http://denver-history.herokuapp.com/images/https://anschutzcollection.org/wp-content/uploads/2017/10/Navarre_2.png"
+/>,
+            ],
+            "className": "banner-img-wrap",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "❮❮",
+                "className": "hide-sidebar-btn",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "❮❮",
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "src": "http://denver-history.herokuapp.com/images/https://anschutzcollection.org/wp-content/uploads/2017/10/Navarre_2.png",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "img",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h2>
+                Navarre Building
+</h2>,
+              <ul>
+                <li>
+                                Built: 
+                                1880
+                </li>
+                <li>
+                                Address: 
+                                1727 Tremont Street
+                </li>
+</ul>,
+              <p>
+                This iconic building was designed by Frank E. Edbrooke. It was built as a school for girls, called The Brinker Collegiate Institute after its owners, Joseph and Elizabeth Brinker. They owned and operated the school from 1880 (eventually turning it into a coeducational facility) until 1886. Forced into foreclosure after Joseph Brinker’s death, the building was sold to two of the West’s most notorious gamblers. They turned it into Hotel Richelieu, a gentleman’s club. Only six months later, the new owners lost the building in a card game to two other known gamblers, Ed Chase and Vaso Chucovich. They renamed the building “The Navarre” after King Henry Navarre (1553-1610), a devotee of decadence and high living. The building was turned into a bordello, offering public dining and private gambling on the bottom two floors, and more illicit pleasures on the top two levels. The Brown Palace Hotel was built across the street in 1892, and an underground tunnel was constructed between the two buildings to share coal. Legend says that the tunnel was also used to discreetly transport gentlemen guests between the two buildings. At some point in the past The Navarre’s entrance to the tunnel was sealed off, and the length of the tunnel possibly even filled in with masonry to prevent the street overhead from collapsing. In 1904, Denver Mayor Robert Speer was elected. Bowing to public pressure, he put an end to gambling and prostitution in Denver. The Navarre became a respectable dining club, although legend has it that illicit activity continued well into the 1920s. In the 1990s, The Navarre was renovated and restored it to its Victorian roots and the Anschutz Collection of Western American art moved in.
+</p>,
+            ],
+            "className": "content-wrap",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Navarre Building",
+              },
+              "ref": null,
+              "rendered": "Navarre Building",
+              "type": "h2",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <li>
+                    Built: 
+                    1880
+</li>,
+                  <li>
+                    Address: 
+                    1727 Tremont Street
+</li>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "Built: ",
+                      "1880",
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Built: ",
+                    "1880",
+                  ],
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "Address: ",
+                      "1727 Tremont Street",
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Address: ",
+                    "1727 Tremont Street",
+                  ],
+                  "type": "li",
+                },
+              ],
+              "type": "ul",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "This iconic building was designed by Frank E. Edbrooke. It was built as a school for girls, called The Brinker Collegiate Institute after its owners, Joseph and Elizabeth Brinker. They owned and operated the school from 1880 (eventually turning it into a coeducational facility) until 1886. Forced into foreclosure after Joseph Brinker’s death, the building was sold to two of the West’s most notorious gamblers. They turned it into Hotel Richelieu, a gentleman’s club. Only six months later, the new owners lost the building in a card game to two other known gamblers, Ed Chase and Vaso Chucovich. They renamed the building “The Navarre” after King Henry Navarre (1553-1610), a devotee of decadence and high living. The building was turned into a bordello, offering public dining and private gambling on the bottom two floors, and more illicit pleasures on the top two levels. The Brown Palace Hotel was built across the street in 1892, and an underground tunnel was constructed between the two buildings to share coal. Legend says that the tunnel was also used to discreetly transport gentlemen guests between the two buildings. At some point in the past The Navarre’s entrance to the tunnel was sealed off, and the length of the tunnel possibly even filled in with masonry to prevent the street overhead from collapsing. In 1904, Denver Mayor Robert Speer was elected. Bowing to public pressure, he put an end to gambling and prostitution in Denver. The Navarre became a respectable dining club, although legend has it that illicit activity continued well into the 1920s. In the 1990s, The Navarre was renovated and restored it to its Victorian roots and the Anschutz Collection of Western American art moved in.",
+              },
+              "ref": null,
+              "rendered": "This iconic building was designed by Frank E. Edbrooke. It was built as a school for girls, called The Brinker Collegiate Institute after its owners, Joseph and Elizabeth Brinker. They owned and operated the school from 1880 (eventually turning it into a coeducational facility) until 1886. Forced into foreclosure after Joseph Brinker’s death, the building was sold to two of the West’s most notorious gamblers. They turned it into Hotel Richelieu, a gentleman’s club. Only six months later, the new owners lost the building in a card game to two other known gamblers, Ed Chase and Vaso Chucovich. They renamed the building “The Navarre” after King Henry Navarre (1553-1610), a devotee of decadence and high living. The building was turned into a bordello, offering public dining and private gambling on the bottom two floors, and more illicit pleasures on the top two levels. The Brown Palace Hotel was built across the street in 1892, and an underground tunnel was constructed between the two buildings to share coal. Legend says that the tunnel was also used to discreetly transport gentlemen guests between the two buildings. At some point in the past The Navarre’s entrance to the tunnel was sealed off, and the length of the tunnel possibly even filled in with masonry to prevent the street overhead from collapsing. In 1904, Denver Mayor Robert Speer was elected. Bowing to public pressure, he put an end to gambling and prostitution in Denver. The Navarre became a respectable dining club, although legend has it that illicit activity continued well into the 1920s. In the 1990s, The Navarre was renovated and restored it to its Victorian roots and the Anschutz Collection of Western American art moved in.",
+              "type": "p",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "section",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`Sidebar Should match snapshot when hidden 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Sidebar
+    building={
+        Object {
+            "address_id": null,
+            "address_line1": "1727 Tremont Street",
+            "address_line2": "1725 Tremont Place",
+            "aka_name": "Bricker Collegiate Institute",
+            "arch_bldr": null,
+            "created_at": "2018-04-11T22:00:39.855Z",
+            "description": "This iconic building was designed by Frank E. Edbrooke. It was built as a school for girls, called The Brinker Collegiate Institute after its owners, Joseph and Elizabeth Brinker. They owned and operated the school from 1880 (eventually turning it into a coeducational facility) until 1886. Forced into foreclosure after Joseph Brinker’s death, the building was sold to two of the West’s most notorious gamblers. They turned it into Hotel Richelieu, a gentleman’s club. Only six months later, the new owners lost the building in a card game to two other known gamblers, Ed Chase and Vaso Chucovich. They renamed the building “The Navarre” after King Henry Navarre (1553-1610), a devotee of decadence and high living. The building was turned into a bordello, offering public dining and private gambling on the bottom two floors, and more illicit pleasures on the top two levels. The Brown Palace Hotel was built across the street in 1892, and an underground tunnel was constructed between the two buildings to share coal. Legend says that the tunnel was also used to discreetly transport gentlemen guests between the two buildings. At some point in the past The Navarre’s entrance to the tunnel was sealed off, and the length of the tunnel possibly even filled in with masonry to prevent the street overhead from collapsing. In 1904, Denver Mayor Robert Speer was elected. Bowing to public pressure, he put an end to gambling and prostitution in Denver. The Navarre became a respectable dining club, although legend has it that illicit activity continued well into the 1920s. In the 1990s, The Navarre was renovated and restored it to its Victorian roots and the Anschutz Collection of Western American art moved in.",
+            "document": null,
+            "gis_notes": null,
+            "historic_dist": 30,
+            "id": 603,
+            "lat": "39.7447201469119",
+            "ldmk_name": "Navarre Building",
+            "ldmk_num": 21,
+            "lon": "-104.988045901496",
+            "notes": null,
+            "ord_num": 470,
+            "ord_year": 1971,
+            "photo_link": "https://anschutzcollection.org/wp-content/uploads/2017/10/Navarre_2.png",
+            "situs_dir": null,
+            "situs_num": 1725,
+            "situs_st": "Tremont",
+            "situs_type": "PL",
+            "state_hist_num": "5DV.124",
+            "updated_at": "2018-04-11T22:00:39.855Z",
+            "year_built": "1880",
+          }
+    }
+    hideSidebar={[Function]}
+    showSidebar={false}
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="banner-img-wrap"
+>
+          <div
+                    className="hide-sidebar-btn"
+                    onClick={[Function]}
+          >
+                    ❮❮
+          </div>
+          <img
+                    src="http://denver-history.herokuapp.com/images/https://anschutzcollection.org/wp-content/uploads/2017/10/Navarre_2.png"
+          />
+</div>,
+        <div
+          className="content-wrap"
+>
+          <h2>
+                    Navarre Building
+          </h2>
+          <ul>
+                    <li>
+                              Built: 
+                              1880
+                    </li>
+                    <li>
+                              Address: 
+                              1727 Tremont Street
+                    </li>
+          </ul>
+          <p>
+                    This iconic building was designed by Frank E. Edbrooke. It was built as a school for girls, called The Brinker Collegiate Institute after its owners, Joseph and Elizabeth Brinker. They owned and operated the school from 1880 (eventually turning it into a coeducational facility) until 1886. Forced into foreclosure after Joseph Brinker’s death, the building was sold to two of the West’s most notorious gamblers. They turned it into Hotel Richelieu, a gentleman’s club. Only six months later, the new owners lost the building in a card game to two other known gamblers, Ed Chase and Vaso Chucovich. They renamed the building “The Navarre” after King Henry Navarre (1553-1610), a devotee of decadence and high living. The building was turned into a bordello, offering public dining and private gambling on the bottom two floors, and more illicit pleasures on the top two levels. The Brown Palace Hotel was built across the street in 1892, and an underground tunnel was constructed between the two buildings to share coal. Legend says that the tunnel was also used to discreetly transport gentlemen guests between the two buildings. At some point in the past The Navarre’s entrance to the tunnel was sealed off, and the length of the tunnel possibly even filled in with masonry to prevent the street overhead from collapsing. In 1904, Denver Mayor Robert Speer was elected. Bowing to public pressure, he put an end to gambling and prostitution in Denver. The Navarre became a respectable dining club, although legend has it that illicit activity continued well into the 1920s. In the 1990s, The Navarre was renovated and restored it to its Victorian roots and the Anschutz Collection of Western American art moved in.
+          </p>
+</div>,
+      ],
+      "className": "sidebar sidebar-hidden",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="hide-sidebar-btn"
+              onClick={[Function]}
+>
+              ❮❮
+</div>,
+            <img
+              src="http://denver-history.herokuapp.com/images/https://anschutzcollection.org/wp-content/uploads/2017/10/Navarre_2.png"
+/>,
+          ],
+          "className": "banner-img-wrap",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "❮❮",
+              "className": "hide-sidebar-btn",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "❮❮",
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "src": "http://denver-history.herokuapp.com/images/https://anschutzcollection.org/wp-content/uploads/2017/10/Navarre_2.png",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "img",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h2>
+              Navarre Building
+</h2>,
+            <ul>
+              <li>
+                            Built: 
+                            1880
+              </li>
+              <li>
+                            Address: 
+                            1727 Tremont Street
+              </li>
+</ul>,
+            <p>
+              This iconic building was designed by Frank E. Edbrooke. It was built as a school for girls, called The Brinker Collegiate Institute after its owners, Joseph and Elizabeth Brinker. They owned and operated the school from 1880 (eventually turning it into a coeducational facility) until 1886. Forced into foreclosure after Joseph Brinker’s death, the building was sold to two of the West’s most notorious gamblers. They turned it into Hotel Richelieu, a gentleman’s club. Only six months later, the new owners lost the building in a card game to two other known gamblers, Ed Chase and Vaso Chucovich. They renamed the building “The Navarre” after King Henry Navarre (1553-1610), a devotee of decadence and high living. The building was turned into a bordello, offering public dining and private gambling on the bottom two floors, and more illicit pleasures on the top two levels. The Brown Palace Hotel was built across the street in 1892, and an underground tunnel was constructed between the two buildings to share coal. Legend says that the tunnel was also used to discreetly transport gentlemen guests between the two buildings. At some point in the past The Navarre’s entrance to the tunnel was sealed off, and the length of the tunnel possibly even filled in with masonry to prevent the street overhead from collapsing. In 1904, Denver Mayor Robert Speer was elected. Bowing to public pressure, he put an end to gambling and prostitution in Denver. The Navarre became a respectable dining club, although legend has it that illicit activity continued well into the 1920s. In the 1990s, The Navarre was renovated and restored it to its Victorian roots and the Anschutz Collection of Western American art moved in.
+</p>,
+          ],
+          "className": "content-wrap",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Navarre Building",
+            },
+            "ref": null,
+            "rendered": "Navarre Building",
+            "type": "h2",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <li>
+                  Built: 
+                  1880
+</li>,
+                <li>
+                  Address: 
+                  1727 Tremont Street
+</li>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Built: ",
+                    "1880",
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Built: ",
+                  "1880",
+                ],
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Address: ",
+                    "1727 Tremont Street",
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Address: ",
+                  "1727 Tremont Street",
+                ],
+                "type": "li",
+              },
+            ],
+            "type": "ul",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "This iconic building was designed by Frank E. Edbrooke. It was built as a school for girls, called The Brinker Collegiate Institute after its owners, Joseph and Elizabeth Brinker. They owned and operated the school from 1880 (eventually turning it into a coeducational facility) until 1886. Forced into foreclosure after Joseph Brinker’s death, the building was sold to two of the West’s most notorious gamblers. They turned it into Hotel Richelieu, a gentleman’s club. Only six months later, the new owners lost the building in a card game to two other known gamblers, Ed Chase and Vaso Chucovich. They renamed the building “The Navarre” after King Henry Navarre (1553-1610), a devotee of decadence and high living. The building was turned into a bordello, offering public dining and private gambling on the bottom two floors, and more illicit pleasures on the top two levels. The Brown Palace Hotel was built across the street in 1892, and an underground tunnel was constructed between the two buildings to share coal. Legend says that the tunnel was also used to discreetly transport gentlemen guests between the two buildings. At some point in the past The Navarre’s entrance to the tunnel was sealed off, and the length of the tunnel possibly even filled in with masonry to prevent the street overhead from collapsing. In 1904, Denver Mayor Robert Speer was elected. Bowing to public pressure, he put an end to gambling and prostitution in Denver. The Navarre became a respectable dining club, although legend has it that illicit activity continued well into the 1920s. In the 1990s, The Navarre was renovated and restored it to its Victorian roots and the Anschutz Collection of Western American art moved in.",
+            },
+            "ref": null,
+            "rendered": "This iconic building was designed by Frank E. Edbrooke. It was built as a school for girls, called The Brinker Collegiate Institute after its owners, Joseph and Elizabeth Brinker. They owned and operated the school from 1880 (eventually turning it into a coeducational facility) until 1886. Forced into foreclosure after Joseph Brinker’s death, the building was sold to two of the West’s most notorious gamblers. They turned it into Hotel Richelieu, a gentleman’s club. Only six months later, the new owners lost the building in a card game to two other known gamblers, Ed Chase and Vaso Chucovich. They renamed the building “The Navarre” after King Henry Navarre (1553-1610), a devotee of decadence and high living. The building was turned into a bordello, offering public dining and private gambling on the bottom two floors, and more illicit pleasures on the top two levels. The Brown Palace Hotel was built across the street in 1892, and an underground tunnel was constructed between the two buildings to share coal. Legend says that the tunnel was also used to discreetly transport gentlemen guests between the two buildings. At some point in the past The Navarre’s entrance to the tunnel was sealed off, and the length of the tunnel possibly even filled in with masonry to prevent the street overhead from collapsing. In 1904, Denver Mayor Robert Speer was elected. Bowing to public pressure, he put an end to gambling and prostitution in Denver. The Navarre became a respectable dining club, although legend has it that illicit activity continued well into the 1920s. In the 1990s, The Navarre was renovated and restored it to its Victorian roots and the Anschutz Collection of Western American art moved in.",
+            "type": "p",
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "section",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="banner-img-wrap"
+>
+            <div
+                        className="hide-sidebar-btn"
+                        onClick={[Function]}
+            >
+                        ❮❮
+            </div>
+            <img
+                        src="http://denver-history.herokuapp.com/images/https://anschutzcollection.org/wp-content/uploads/2017/10/Navarre_2.png"
+            />
+</div>,
+          <div
+            className="content-wrap"
+>
+            <h2>
+                        Navarre Building
+            </h2>
+            <ul>
+                        <li>
+                                    Built: 
+                                    1880
+                        </li>
+                        <li>
+                                    Address: 
+                                    1727 Tremont Street
+                        </li>
+            </ul>
+            <p>
+                        This iconic building was designed by Frank E. Edbrooke. It was built as a school for girls, called The Brinker Collegiate Institute after its owners, Joseph and Elizabeth Brinker. They owned and operated the school from 1880 (eventually turning it into a coeducational facility) until 1886. Forced into foreclosure after Joseph Brinker’s death, the building was sold to two of the West’s most notorious gamblers. They turned it into Hotel Richelieu, a gentleman’s club. Only six months later, the new owners lost the building in a card game to two other known gamblers, Ed Chase and Vaso Chucovich. They renamed the building “The Navarre” after King Henry Navarre (1553-1610), a devotee of decadence and high living. The building was turned into a bordello, offering public dining and private gambling on the bottom two floors, and more illicit pleasures on the top two levels. The Brown Palace Hotel was built across the street in 1892, and an underground tunnel was constructed between the two buildings to share coal. Legend says that the tunnel was also used to discreetly transport gentlemen guests between the two buildings. At some point in the past The Navarre’s entrance to the tunnel was sealed off, and the length of the tunnel possibly even filled in with masonry to prevent the street overhead from collapsing. In 1904, Denver Mayor Robert Speer was elected. Bowing to public pressure, he put an end to gambling and prostitution in Denver. The Navarre became a respectable dining club, although legend has it that illicit activity continued well into the 1920s. In the 1990s, The Navarre was renovated and restored it to its Victorian roots and the Anschutz Collection of Western American art moved in.
+            </p>
+</div>,
+        ],
+        "className": "sidebar sidebar-hidden",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="hide-sidebar-btn"
+                onClick={[Function]}
+>
+                ❮❮
+</div>,
+              <img
+                src="http://denver-history.herokuapp.com/images/https://anschutzcollection.org/wp-content/uploads/2017/10/Navarre_2.png"
+/>,
+            ],
+            "className": "banner-img-wrap",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "❮❮",
+                "className": "hide-sidebar-btn",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "❮❮",
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "src": "http://denver-history.herokuapp.com/images/https://anschutzcollection.org/wp-content/uploads/2017/10/Navarre_2.png",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "img",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h2>
+                Navarre Building
+</h2>,
+              <ul>
+                <li>
+                                Built: 
+                                1880
+                </li>
+                <li>
+                                Address: 
+                                1727 Tremont Street
+                </li>
+</ul>,
+              <p>
+                This iconic building was designed by Frank E. Edbrooke. It was built as a school for girls, called The Brinker Collegiate Institute after its owners, Joseph and Elizabeth Brinker. They owned and operated the school from 1880 (eventually turning it into a coeducational facility) until 1886. Forced into foreclosure after Joseph Brinker’s death, the building was sold to two of the West’s most notorious gamblers. They turned it into Hotel Richelieu, a gentleman’s club. Only six months later, the new owners lost the building in a card game to two other known gamblers, Ed Chase and Vaso Chucovich. They renamed the building “The Navarre” after King Henry Navarre (1553-1610), a devotee of decadence and high living. The building was turned into a bordello, offering public dining and private gambling on the bottom two floors, and more illicit pleasures on the top two levels. The Brown Palace Hotel was built across the street in 1892, and an underground tunnel was constructed between the two buildings to share coal. Legend says that the tunnel was also used to discreetly transport gentlemen guests between the two buildings. At some point in the past The Navarre’s entrance to the tunnel was sealed off, and the length of the tunnel possibly even filled in with masonry to prevent the street overhead from collapsing. In 1904, Denver Mayor Robert Speer was elected. Bowing to public pressure, he put an end to gambling and prostitution in Denver. The Navarre became a respectable dining club, although legend has it that illicit activity continued well into the 1920s. In the 1990s, The Navarre was renovated and restored it to its Victorian roots and the Anschutz Collection of Western American art moved in.
+</p>,
+            ],
+            "className": "content-wrap",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Navarre Building",
+              },
+              "ref": null,
+              "rendered": "Navarre Building",
+              "type": "h2",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <li>
+                    Built: 
+                    1880
+</li>,
+                  <li>
+                    Address: 
+                    1727 Tremont Street
+</li>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "Built: ",
+                      "1880",
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Built: ",
+                    "1880",
+                  ],
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "Address: ",
+                      "1727 Tremont Street",
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Address: ",
+                    "1727 Tremont Street",
+                  ],
+                  "type": "li",
+                },
+              ],
+              "type": "ul",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "This iconic building was designed by Frank E. Edbrooke. It was built as a school for girls, called The Brinker Collegiate Institute after its owners, Joseph and Elizabeth Brinker. They owned and operated the school from 1880 (eventually turning it into a coeducational facility) until 1886. Forced into foreclosure after Joseph Brinker’s death, the building was sold to two of the West’s most notorious gamblers. They turned it into Hotel Richelieu, a gentleman’s club. Only six months later, the new owners lost the building in a card game to two other known gamblers, Ed Chase and Vaso Chucovich. They renamed the building “The Navarre” after King Henry Navarre (1553-1610), a devotee of decadence and high living. The building was turned into a bordello, offering public dining and private gambling on the bottom two floors, and more illicit pleasures on the top two levels. The Brown Palace Hotel was built across the street in 1892, and an underground tunnel was constructed between the two buildings to share coal. Legend says that the tunnel was also used to discreetly transport gentlemen guests between the two buildings. At some point in the past The Navarre’s entrance to the tunnel was sealed off, and the length of the tunnel possibly even filled in with masonry to prevent the street overhead from collapsing. In 1904, Denver Mayor Robert Speer was elected. Bowing to public pressure, he put an end to gambling and prostitution in Denver. The Navarre became a respectable dining club, although legend has it that illicit activity continued well into the 1920s. In the 1990s, The Navarre was renovated and restored it to its Victorian roots and the Anschutz Collection of Western American art moved in.",
+              },
+              "ref": null,
+              "rendered": "This iconic building was designed by Frank E. Edbrooke. It was built as a school for girls, called The Brinker Collegiate Institute after its owners, Joseph and Elizabeth Brinker. They owned and operated the school from 1880 (eventually turning it into a coeducational facility) until 1886. Forced into foreclosure after Joseph Brinker’s death, the building was sold to two of the West’s most notorious gamblers. They turned it into Hotel Richelieu, a gentleman’s club. Only six months later, the new owners lost the building in a card game to two other known gamblers, Ed Chase and Vaso Chucovich. They renamed the building “The Navarre” after King Henry Navarre (1553-1610), a devotee of decadence and high living. The building was turned into a bordello, offering public dining and private gambling on the bottom two floors, and more illicit pleasures on the top two levels. The Brown Palace Hotel was built across the street in 1892, and an underground tunnel was constructed between the two buildings to share coal. Legend says that the tunnel was also used to discreetly transport gentlemen guests between the two buildings. At some point in the past The Navarre’s entrance to the tunnel was sealed off, and the length of the tunnel possibly even filled in with masonry to prevent the street overhead from collapsing. In 1904, Denver Mayor Robert Speer was elected. Bowing to public pressure, he put an end to gambling and prostitution in Denver. The Navarre became a respectable dining club, although legend has it that illicit activity continued well into the 1920s. In the 1990s, The Navarre was renovated and restored it to its Victorian roots and the Anschutz Collection of Western American art moved in.",
+              "type": "p",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "section",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
