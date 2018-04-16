@@ -1,6 +1,6 @@
 export const districtReducer = ( state=[], action ) => {
   switch(action.type) {
-    case 'LOAD_DISTRICT':
+    case 'ADD_DISTRICT':
       return action.district;
     case 'CLEAR_DISTRICT':
       return [];

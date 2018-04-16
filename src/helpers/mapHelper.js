@@ -2,7 +2,7 @@ export const mapParams = (mapContainer) => ({
   container: mapContainer,
   style: 'mapbox://styles/mapbox/light-v9',
   //  maxbounds: [lng, lat],
-  center: [-104.9987887, 39.7508047],
+  center: [-104.994813, 39.7452204],
   zoom: 16,
   bearing: -17.6,
   pitch: 45
@@ -40,8 +40,9 @@ const formatPoints = data => {
           "coordinates": [ lon, lat ] 
         }, 
          "properties": {
-            "title": aka_name || ldmk_name,
-            "icon": "monument"
+           "title": ldmk_name,
+           "icon": "monument",
+           "id": id
         }
       }
     }

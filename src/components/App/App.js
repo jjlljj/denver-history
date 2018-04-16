@@ -1,17 +1,14 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 import './App.css';
 import Map from '../Map/Map';
 import Header from '../Header/Header';
 import Sidebar from '../Sidebar/Sidebar';
+import { addDistrict } from '../../actions'
 import { getDistrictBuildings } from '../../helpers/apiHelper.js';
 
-class App extends Component {
-  constructor() {
-    super();
-    this.state = {
-      district: []
-    };
-  }
+export class App extends Component {
 
   componentDidMount = () => {
     this.fetchBuildings()
@@ -19,15 +16,15 @@ class App extends Component {
 
   fetchBuildings = async () => {
     try {
-      const district = await getDistrictBuildings(30)
-      this.setState({ district });
+      const district = await getDistrictBuildings(3)
+      this.props.addDistrict(district);
     } catch (error) {
       console.log(error);
     };
   }
 
   render() {
-    const { district } = this.state;
+    const { district } = this.props;
 
     return (
       <div>
@@ -41,4 +38,12 @@ class App extends Component {
   }
 }
 
-export default App;
+const mapStateToProps = ({ district }) => ({
+  district
+})
+
+const mapDispatchToProps = dispatch => ({
+  addDistrict: district => dispatch(addDistrict(district))
+})
+
+export default connect(mapStateToProps, mapDispatchToProps)(App);
