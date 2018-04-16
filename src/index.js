@@ -8,6 +8,7 @@ import { createStore, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
 import rootReducer from './reducers/rootReducer';
 import logger from 'redux-logger';
+import { BrowserRouter } from 'react-router-dom';
  
 require('dotenv').config()
 
@@ -17,6 +18,8 @@ const store = createStore(rootReducer, devTools, middleware);
 
 ReactDOM.render(
   <Provider store = { store }>
+    <BrowserRouter>
       <App />
+    </BrowserRouter>
   </Provider>, document.getElementById('root'));
 registerServiceWorker();
