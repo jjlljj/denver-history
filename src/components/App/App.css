@@ -3,4 +3,9 @@
   height: 90vh;
   justify-content: space-between;
   min-height: 400px;
+  font-family: 'Open Sans', sans-serif;
 }
+
+/*@media and max-width(500px) {
+  
+}*/

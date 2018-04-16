@@ -13,7 +13,7 @@ export default class Header extends Component {
   render() {
     return (
       <header className="site-header">
-        <h1>Denver History</h1>
+        <h1>Historic Denver</h1>
       </header>
     )
   }
