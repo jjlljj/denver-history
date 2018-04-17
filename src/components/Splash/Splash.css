@@ -1,0 +1,30 @@
+
+#splash-page {
+  background-image: url('./background_min.jpg');
+  text-align: center; 
+  height: 100vh;
+  position: relative;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#layer {
+  background: linear-gradient(to right, rgba(63, 81, 181, .67), rgba(86, 179, 224, .9)); 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+.logo {
+  color: white;
+  font-size: 64px;
+}
