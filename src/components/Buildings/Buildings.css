@@ -28,17 +28,17 @@
 }
 
 .icon-cards__item:nth-child(1) {
-  background: url('./cash_register.png');
+  background: rgba(252,192,77,.9);
   transform: rotateY(0) translateZ(182px);
 }
 
 .icon-cards__item:nth-child(2) {
-  background: url('./capitol.png');
+  background: rgba(49,192,204,.9);
   transform: rotateY(120deg) translateZ(182px);
 }
 
 .icon-cards__item:nth-child(3) {
-  background: url('./horse.png');
+  background: rgba(236,233,242,.9);
   transform: rotateY(240deg) translateZ(182px);
 }
 
