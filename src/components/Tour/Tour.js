@@ -26,7 +26,7 @@ export class Tour extends Component {
   }
 
   renderMap = () => {
-    const { showLoading } = this.props;
+    const { showLoading, district } = this.props;
 
     if ( showLoading ) {
       return <Spinner />
