@@ -18,7 +18,7 @@ describe('Tour', () => {
     district = []
     addDistrict = jest.fn()
     showLoading = true
-    renderedComponent = shallow(<Tour showLoading={ showLoading } addDistrict={addDistrict}/>, { disableLifecycleMethods: true })
+    renderedComponent = shallow(<Tour district={district} showLoading={ showLoading } addDistrict={addDistrict}/>, { disableLifecycleMethods: true })
 
     window.fetch = jest.fn().mockImplementation(() => Promise.resolve({
       status: 200,
