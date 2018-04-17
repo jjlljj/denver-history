@@ -17,9 +17,17 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": <h1>
-        Historic Denver SPLASH
-</h1>,
+      "children": <div
+        id="layer"
+>
+        <h1
+                class="logo"
+        >
+                Historic Denver SPLASH
+        </h1>
+        <Buildings />
+</div>,
+      "id": "splash-page",
     },
     "ref": null,
     "rendered": Object {
@@ -27,11 +35,41 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": "Historic Denver SPLASH",
+        "children": Array [
+          <h1
+            class="logo"
+>
+            Historic Denver SPLASH
+</h1>,
+          <Buildings />,
+        ],
+        "id": "layer",
       },
       "ref": null,
-      "rendered": "Historic Denver SPLASH",
-      "type": "h1",
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Historic Denver SPLASH",
+            "class": "logo",
+          },
+          "ref": null,
+          "rendered": "Historic Denver SPLASH",
+          "type": "h1",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "div",
     },
     "type": "div",
   },
@@ -41,9 +79,17 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": <h1>
-          Historic Denver SPLASH
-</h1>,
+        "children": <div
+          id="layer"
+>
+          <h1
+                    class="logo"
+          >
+                    Historic Denver SPLASH
+          </h1>
+          <Buildings />
+</div>,
+        "id": "splash-page",
       },
       "ref": null,
       "rendered": Object {
@@ -51,11 +97,41 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "Historic Denver SPLASH",
+          "children": Array [
+            <h1
+              class="logo"
+>
+              Historic Denver SPLASH
+</h1>,
+            <Buildings />,
+          ],
+          "id": "layer",
         },
         "ref": null,
-        "rendered": "Historic Denver SPLASH",
-        "type": "h1",
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Historic Denver SPLASH",
+              "class": "logo",
+            },
+            "ref": null,
+            "rendered": "Historic Denver SPLASH",
+            "type": "h1",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": "div",
       },
       "type": "div",
     },
