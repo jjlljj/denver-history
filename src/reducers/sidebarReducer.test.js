@@ -1,5 +1,5 @@
 /* eslint-disable */
-import { sidebarReducer } from './sidebarReducer';
+import { sidebarReducer, showLoadingReducer } from './sidebarReducer';
 import * as actions from '../actions/index';
 import { mockBuilding } from '../__mocks__/mockData';
 
@@ -21,6 +21,21 @@ describe('sidebarReducer', () => {
     const expected = false;
 
     expect(sidebarReducer(undefined, action)).toEqual(expected)
+  })
+
+})
+
+describe('showLoadingReducer', () => {
+
+  it('should return the default state', () => {
+    expect(showLoadingReducer(undefined, {})).toEqual(true)
+  })
+
+  it('CLEAR_LOADING should return the new loading state', () => {
+    const action = actions.clearLoading();
+    const expected = false;
+
+    expect(showLoadingReducer(undefined, action)).toEqual(expected)
   })
 
 })

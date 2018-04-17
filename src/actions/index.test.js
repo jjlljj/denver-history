@@ -46,4 +46,11 @@ describe('actions', () => {
     }
     expect(actions.hideSidebar()).toEqual(expected)
   })
+
+  it('CLEAR_LOADING should return a type of CLEAR_LOADING', () => {
+    const expected = {
+      type: 'CLEAR_LOADING'
+    }
+    expect(actions.clearLoading()).toEqual(expected)
+  })
 })

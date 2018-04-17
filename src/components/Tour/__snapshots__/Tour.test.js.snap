@@ -26,7 +26,7 @@ ShallowWrapper {
           className="main-wrap"
 >
           <Connect(Sidebar) />
-          0
+          <Spinner />
 </section>,
       ],
     },
@@ -48,7 +48,7 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <Connect(Sidebar) />,
-            0,
+            <Spinner />,
           ],
           "className": "main-wrap",
         },
@@ -63,7 +63,15 @@ ShallowWrapper {
             "rendered": null,
             "type": [Function],
           },
-          0,
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
         ],
         "type": "section",
       },
@@ -82,7 +90,7 @@ ShallowWrapper {
             className="main-wrap"
 >
             <Connect(Sidebar) />
-            0
+            <Spinner />
 </section>,
         ],
       },
@@ -104,7 +112,7 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <Connect(Sidebar) />,
-              0,
+              <Spinner />,
             ],
             "className": "main-wrap",
           },
@@ -119,7 +127,15 @@ ShallowWrapper {
               "rendered": null,
               "type": [Function],
             },
-            0,
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
           ],
           "type": "section",
         },

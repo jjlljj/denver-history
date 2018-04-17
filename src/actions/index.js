@@ -23,3 +23,7 @@ export const showSidebar = () => ({
 export const hideSidebar = () => ({
   type: 'HIDE_SIDEBAR'
 });
+
+export const clearLoading = () => ({
+  type: 'CLEAR_LOADING'
+});
