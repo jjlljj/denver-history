@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import Router, { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './Splash.css';
 
 export default class Splash extends Component {
