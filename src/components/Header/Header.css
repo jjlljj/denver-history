@@ -9,5 +9,6 @@
 .site-header {
   color: #f6f6f4;
   font-size: 2rem;
-  font-family: 'Berkshire Swash', cursive;
+  font-family: 'Milonga', cursive;
+  text-shadow: 2px 2px #000;
 }
