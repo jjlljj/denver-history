@@ -6,7 +6,7 @@ export default class Spinner extends Component {
 
   render() {
     return (
-      <div>
+      <div className="spinner-animation">
         <figure className="icon-cards">
           <div className="icon-cards__content">
             <div className="icon-cards__item"></div>

@@ -25,13 +25,20 @@ export class Tour extends Component {
     };
   }
 
-  renderMap = () => {
-    const { showLoading, district } = this.props;
+  renderSpinner = () => {
+    const { showLoading } = this.props;
 
     if ( showLoading ) {
-      return <Spinner />
-    }
-    return <Map geoJSON={ district } />
+      return <Spinner />;
+    };
+  }
+
+  renderMap = () => {
+    const { district } = this.props;
+
+    if (district.length) {
+      return <Map geoJSON={ district } />;
+    };
   }
 
   render() {
@@ -40,15 +47,17 @@ export class Tour extends Component {
         <Header />
         <section className="main-wrap">
           <Sidebar />
-          { this.renderMap()  }
+          { this.renderSpinner() }
+          { this.renderMap() }
         </section>
       </div>
     );
   }
 }
 
-const mapStateToProps = ({ showLoading }) => ({
-  showLoading
+const mapStateToProps = ({ showLoading, district }) => ({
+  showLoading,
+  district
 })
 
 const mapDispatchToProps = dispatch => ({

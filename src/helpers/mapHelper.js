@@ -84,7 +84,7 @@ export const renderMapElements = (map, geoJSON, handleBuildingClick, toggleLoad)
       handleBuildingClick(id);
     });
 
-    toggleLoad()
+    setTimeout(() => toggleLoad(), 2000)
   })
 }
 
