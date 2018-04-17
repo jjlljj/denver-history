@@ -1,14 +1,11 @@
 .site-header {
   align-items: center;
   background: #281845;
-  display: flex;
-  height: 60px;
-  justify-content: center;
-}
-
-.site-header {
   color: #f6f6f4;
+  display: flex;
   font-size: 2rem;
   font-family: 'Milonga', cursive;
+  height: 10vh;
+  justify-content: center;
   text-shadow: 2px 2px #000;
 }
