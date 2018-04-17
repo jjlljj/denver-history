@@ -32,6 +32,7 @@ export class Tour extends Component {
         <Header />
         <section className="main-wrap">
           <Sidebar />
+
           { district.length && <Map geoJSON={ district } /> }
         </section>
       </div>
