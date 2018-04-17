@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import './Buildings.css';
+import './Spinner.css';
 
-export default class Buildings extends Component {
+export default class Spinner extends Component {
 
   render() {
     return (

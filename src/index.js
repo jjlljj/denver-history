@@ -10,8 +10,6 @@ import rootReducer from './reducers/rootReducer';
 import logger from 'redux-logger';
 import { BrowserRouter } from 'react-router-dom';
  
-require('dotenv').config()
-
 const devTools = window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__();
 const middleware = applyMiddleware(logger);
 const store = createStore(rootReducer, devTools, middleware);

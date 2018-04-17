@@ -5,6 +5,7 @@ import './Tour.css';
 import Map from '../Map/Map';
 import Header from '../Header/Header';
 import Sidebar from '../Sidebar/Sidebar';
+import Spinner from '../Spinner/Spinner';
 import { addDistrict } from '../../actions';
 import { getDistrictBuildings } from '../../helpers/apiHelper.js';
 import { Route,  withRouter } from 'react-router-dom';
@@ -24,16 +25,22 @@ export class Tour extends Component {
     };
   }
 
-  render() {
+  renderMap = () => {
     const { district } = this.props;
 
+    if ( !district.length ) {
+      return <Spinner />
+    }
+    return <Map geoJSON={ district } />
+  }
+
+  render() {
     return (
       <div>
         <Header />
         <section className="main-wrap">
           <Sidebar />
-
-          { district.length && <Map geoJSON={ district } /> }
+          { this.renderMap()  }
         </section>
       </div>
     );
