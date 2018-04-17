@@ -26,9 +26,9 @@ export class Tour extends Component {
   }
 
   renderMap = () => {
-    const { district } = this.props;
+    const { showLoading } = this.props;
 
-    if ( !district.length ) {
+    if ( showLoading ) {
       return <Spinner />
     }
     return <Map geoJSON={ district } />
@@ -47,8 +47,8 @@ export class Tour extends Component {
   }
 }
 
-const mapStateToProps = ({ district }) => ({
-  district
+const mapStateToProps = ({ showLoading }) => ({
+  showLoading
 })
 
 const mapDispatchToProps = dispatch => ({

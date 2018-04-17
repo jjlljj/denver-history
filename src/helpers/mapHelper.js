@@ -74,7 +74,7 @@ const formatGeoJSON = geoJSON => {
     }
 }
 
-export const renderMapElements = (map, geoJSON, handleBuildingClick) => {
+export const renderMapElements = (map, geoJSON, handleBuildingClick, toggleLoad) => {
   map.on('load', () => {
     render3dLayers(map, geoJSON)
     renderThreebox(map)
@@ -83,6 +83,8 @@ export const renderMapElements = (map, geoJSON, handleBuildingClick) => {
       const { id } = event.features[0].properties;
       handleBuildingClick(id);
     });
+
+    toggleLoad()
   })
 }
 
