@@ -39,6 +39,7 @@
 
 .icon-cards__item:nth-child(3) {
   background: rgba(236,233,242,.9);
+  
   transform: rotateY(240deg) translateZ(182px);
 }
 
