@@ -66,7 +66,6 @@ const mockDistrict = [
     "lat": "39.7463202027288"
   }
 ]
-import { mockBuilding } from '../../__mocks__/mockdata';
 
 describe('Tour', () => {
   let renderedComponent
