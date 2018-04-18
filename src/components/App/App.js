@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Route } from 'react-router-dom';
 import './App.css';
 import Splash from '../Splash/Splash';
@@ -11,6 +11,6 @@ const App = () => {
       <Route exact path='/tour' component={ Tour } />
     </div>
   );
-}
+};
 
 export default App;

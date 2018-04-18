@@ -7,6 +7,6 @@ const Header = () => {
       <h1>Historic Denver</h1>
     </header>
   );
-}
+};
 
 export default Header;
