@@ -2,12 +2,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { shallow } from 'enzyme';
-import Buildings from './Buildings';
+import Spinner from './Spinner';
 
-describe('Buildings', () => {
+describe('Spinner', () => {
 
   it('matches snapshot', () => {
-    const renderedComponent = shallow(<Buildings />)
+    const renderedComponent = shallow(<Spinner />)
     expect(renderedComponent).toMatchSnapshot()
   })
 })

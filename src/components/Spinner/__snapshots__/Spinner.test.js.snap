@@ -1,10 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Buildings matches snapshot 1`] = `
+exports[`Spinner matches snapshot 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Buildings />,
+  Symbol(enzyme.__unrendered__): <Spinner />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -18,22 +18,23 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": <figure
-        class="icon-cards"
+        className="icon-cards"
 >
         <div
-                class="icon-cards__content"
+                className="icon-cards__content"
         >
                 <div
-                        class="icon-cards__item"
+                        className="icon-cards__item"
                 />
                 <div
-                        class="icon-cards__item"
+                        className="icon-cards__item"
                 />
                 <div
-                        class="icon-cards__item"
+                        className="icon-cards__item"
                 />
         </div>
 </figure>,
+      "className": "spinner-animation",
     },
     "ref": null,
     "rendered": Object {
@@ -42,19 +43,19 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": <div
-          class="icon-cards__content"
+          className="icon-cards__content"
 >
           <div
-                    class="icon-cards__item"
+                    className="icon-cards__item"
           />
           <div
-                    class="icon-cards__item"
+                    className="icon-cards__item"
           />
           <div
-                    class="icon-cards__item"
+                    className="icon-cards__item"
           />
 </div>,
-        "class": "icon-cards",
+        "className": "icon-cards",
       },
       "ref": null,
       "rendered": Object {
@@ -64,16 +65,16 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <div
-              class="icon-cards__item"
+              className="icon-cards__item"
 />,
             <div
-              class="icon-cards__item"
+              className="icon-cards__item"
 />,
             <div
-              class="icon-cards__item"
+              className="icon-cards__item"
 />,
           ],
-          "class": "icon-cards__content",
+          "className": "icon-cards__content",
         },
         "ref": null,
         "rendered": Array [
@@ -82,7 +83,7 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "class": "icon-cards__item",
+              "className": "icon-cards__item",
             },
             "ref": null,
             "rendered": null,
@@ -93,7 +94,7 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "class": "icon-cards__item",
+              "className": "icon-cards__item",
             },
             "ref": null,
             "rendered": null,
@@ -104,7 +105,7 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "class": "icon-cards__item",
+              "className": "icon-cards__item",
             },
             "ref": null,
             "rendered": null,
@@ -124,22 +125,23 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": <figure
-          class="icon-cards"
+          className="icon-cards"
 >
           <div
-                    class="icon-cards__content"
+                    className="icon-cards__content"
           >
                     <div
-                              class="icon-cards__item"
+                              className="icon-cards__item"
                     />
                     <div
-                              class="icon-cards__item"
+                              className="icon-cards__item"
                     />
                     <div
-                              class="icon-cards__item"
+                              className="icon-cards__item"
                     />
           </div>
 </figure>,
+        "className": "spinner-animation",
       },
       "ref": null,
       "rendered": Object {
@@ -148,19 +150,19 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": <div
-            class="icon-cards__content"
+            className="icon-cards__content"
 >
             <div
-                        class="icon-cards__item"
+                        className="icon-cards__item"
             />
             <div
-                        class="icon-cards__item"
+                        className="icon-cards__item"
             />
             <div
-                        class="icon-cards__item"
+                        className="icon-cards__item"
             />
 </div>,
-          "class": "icon-cards",
+          "className": "icon-cards",
         },
         "ref": null,
         "rendered": Object {
@@ -170,16 +172,16 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <div
-                class="icon-cards__item"
+                className="icon-cards__item"
 />,
               <div
-                class="icon-cards__item"
+                className="icon-cards__item"
 />,
               <div
-                class="icon-cards__item"
+                className="icon-cards__item"
 />,
             ],
-            "class": "icon-cards__content",
+            "className": "icon-cards__content",
           },
           "ref": null,
           "rendered": Array [
@@ -188,7 +190,7 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "class": "icon-cards__item",
+                "className": "icon-cards__item",
               },
               "ref": null,
               "rendered": null,
@@ -199,7 +201,7 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "class": "icon-cards__item",
+                "className": "icon-cards__item",
               },
               "ref": null,
               "rendered": null,
@@ -210,7 +212,7 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "class": "icon-cards__item",
+                "className": "icon-cards__item",
               },
               "ref": null,
               "rendered": null,

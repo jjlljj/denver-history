@@ -3,8 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "ajv": "^6.4.0",
-    "dotenv": "^5.0.1",
     "mapbox-gl": "^0.44.2",
     "react": "^16.3.1",
     "react-dom": "^16.3.1",

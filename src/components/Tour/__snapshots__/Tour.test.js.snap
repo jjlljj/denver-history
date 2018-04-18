@@ -7,6 +7,7 @@ ShallowWrapper {
   Symbol(enzyme.__unrendered__): <Tour
     addDistrict={[Function]}
     district={Array []}
+    showLoading={true}
 />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -26,7 +27,7 @@ ShallowWrapper {
           className="main-wrap"
 >
           <Connect(Sidebar) />
-          0
+          <Spinner />
 </section>,
       ],
     },
@@ -48,7 +49,8 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <Connect(Sidebar) />,
-            0,
+            <Spinner />,
+            undefined,
           ],
           "className": "main-wrap",
         },
@@ -63,7 +65,16 @@ ShallowWrapper {
             "rendered": null,
             "type": [Function],
           },
-          0,
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          undefined,
         ],
         "type": "section",
       },
@@ -82,7 +93,7 @@ ShallowWrapper {
             className="main-wrap"
 >
             <Connect(Sidebar) />
-            0
+            <Spinner />
 </section>,
         ],
       },
@@ -104,7 +115,8 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <Connect(Sidebar) />,
-              0,
+              <Spinner />,
+              undefined,
             ],
             "className": "main-wrap",
           },
@@ -119,7 +131,16 @@ ShallowWrapper {
               "rendered": null,
               "type": [Function],
             },
-            0,
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            undefined,
           ],
           "type": "section",
         },

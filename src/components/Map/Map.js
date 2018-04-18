@@ -7,7 +7,7 @@ import  { MB_TOKEN } from '../../.key' ;
 
 import { mapParams, renderMapElements } from '../../helpers/mapHelper';
 import { getBuilding } from '../../helpers/apiHelper'; 
-import { addBuilding, showSidebar } from '../../actions';
+import { addBuilding, showSidebar, clearLoading } from '../../actions';
 
 export class Map extends Component {
     
@@ -16,7 +16,7 @@ export class Map extends Component {
   }
 
   renderMap = () => {
-    const { geoJSON } = this.props; 
+    const { geoJSON, clearLoading } = this.props; 
     const { handleBuildingClick } = this
 
     mapboxgl.accessToken = MB_TOKEN;
@@ -24,7 +24,7 @@ export class Map extends Component {
     this.map.addControl(new mapboxgl.ScaleControl({ maxWidth: 80, unit: 'imperial' }));
     this.map.addControl(new mapboxgl.NavigationControl());
 
-    renderMapElements(this.map, geoJSON, handleBuildingClick)
+    renderMapElements(this.map, geoJSON, handleBuildingClick, clearLoading)
   }
 
   handleBuildingClick = async (buildingId) => {
@@ -60,7 +60,8 @@ export class Map extends Component {
 
 const mapDispatchToProps = dispatch => ({
   addBuilding: building => dispatch(addBuilding(building)),
-  showSidebar: () => dispatch(showSidebar())
+  showSidebar: () => dispatch(showSidebar()),
+  clearLoading: () => dispatch(clearLoading())
 })
 
 export default connect(null, mapDispatchToProps)(Map)

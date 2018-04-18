@@ -2,11 +2,12 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 190px;
-  height: 210px;
+  width: 140px;
+  height: 160px;
   margin: 0;
   perspective: 800px;
   transform: translate(-50%,-50%);
+  z-index: 100;
 }
 
 .icon-cards__content {
@@ -22,24 +23,29 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 190px;
-  height: 210px;
+  width: 160px;
+  height: 160px;
   border-radius: 6px;
 }
 
 .icon-cards__item:nth-child(1) {
-  background: rgba(252,192,77,.9);
+  color: rgba(252,192,77,.9);
+  background: url('assets/building-alt1-15.svg');
+  background-size: cover;
   transform: rotateY(0) translateZ(182px);
 }
 
 .icon-cards__item:nth-child(2) {
-  background: rgba(49,192,204,.9);
+  background: url('assets/city-15.svg');
+  background-size: cover;
+  color: rgba(49,192,204,.9);
   transform: rotateY(120deg) translateZ(182px);
 }
 
 .icon-cards__item:nth-child(3) {
-  background: rgba(236,233,242,.9);
-  
+  color: rgba(236,233,242,.9);
+  background: url('assets/home-15.svg');
+  background-size: cover;
   transform: rotateY(240deg) translateZ(182px);
 }
 

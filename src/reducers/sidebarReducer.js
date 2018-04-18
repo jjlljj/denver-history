@@ -8,3 +8,12 @@ export const sidebarReducer = ( state=false, action ) => {
       return state;
   };
 }
+
+export const showLoadingReducer = ( state=true, action ) => {
+  switch(action.type) {
+    case 'CLEAR_LOADING':
+      return false;
+    default: 
+      return state;
+  }
+}
