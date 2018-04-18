@@ -6,7 +6,7 @@ import { Tour } from './Tour';
 jest.mock('../../../node_modules/mapbox-gl/dist/mapbox-gl', () => () => ({ Map: () => ({}) }));
 jest.mock('../../../node_modules/threebox/', () => () => ({ threebox: jest.fn() }));
 jest.mock('../../actions/index', () => () => ({ addDistrict: jest.fn() }));
-jest.mock('../../.key', () => () => ({ MAPBOX_TOKEN: 'faketoken' }));
+jest.mock('../../.key.js', () => () => ({ MAPBOX_TOKEN: 'faketoken' }));
 import { mockDistrict } from '../../__mocks__/mockdata'
 
 describe('Tour', () => {
