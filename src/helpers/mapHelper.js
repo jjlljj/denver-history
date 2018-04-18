@@ -59,12 +59,14 @@ const formatGeoJSON = geoJSON => {
       "type": "symbol",
       "source": {
           "type": "geojson",
+          "cluster": false,
           "data": {
               "type": "FeatureCollection",
               "features": formatPoints(geoJSON)
           }
       },
       "layout": {
+          "text-optional": true,
           "icon-image": "{icon}-15",
           "text-field": "{title}",
           "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"],
@@ -83,6 +85,14 @@ export const renderMapElements = (map, geoJSON, handleBuildingClick, toggleLoad)
       const { id } = event.features[0].properties;
       handleBuildingClick(id);
     });
+
+    map.on('mouseenter', 'points', event => {
+      map.getCanvas().style.cursor = 'pointer';
+    })
+
+    map.on('mouseleave', 'points', event => {
+      map.getCanvas().style.cursor = '';
+    })
 
     setTimeout(() => toggleLoad(), 2000)
   })
