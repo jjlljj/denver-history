@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 import './Spinner.css';
 
 export default class Spinner extends Component {
@@ -15,6 +14,6 @@ export default class Spinner extends Component {
           </div>
         </figure>
       </div>
-    )
+    );
   }
 }

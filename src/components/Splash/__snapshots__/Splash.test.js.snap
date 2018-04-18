@@ -21,7 +21,7 @@ ShallowWrapper {
         id="layer"
 >
         <h1
-                class="logo"
+                className="logo"
         >
                 Historic Denver
         </h1>
@@ -46,7 +46,7 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <h1
-            class="logo"
+            className="logo"
 >
             Historic Denver
 </h1>,
@@ -71,7 +71,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": "Historic Denver",
-            "class": "logo",
+            "className": "logo",
           },
           "ref": null,
           "rendered": "Historic Denver",
@@ -120,7 +120,7 @@ ShallowWrapper {
           id="layer"
 >
           <h1
-                    class="logo"
+                    className="logo"
           >
                     Historic Denver
           </h1>
@@ -145,7 +145,7 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <h1
-              class="logo"
+              className="logo"
 >
               Historic Denver
 </h1>,
@@ -170,7 +170,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "Historic Denver",
-              "class": "logo",
+              "className": "logo",
             },
             "ref": null,
             "rendered": "Historic Denver",
