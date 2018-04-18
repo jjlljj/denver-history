@@ -84,6 +84,14 @@ export const renderMapElements = (map, geoJSON, handleBuildingClick, toggleLoad)
       handleBuildingClick(id);
     });
 
+    map.on('mouseenter', 'points', event => {
+      map.getCanvas().style.cursor = 'pointer';
+    })
+
+    map.on('mouseleave', 'points', event => {
+      map.getCanvas().style.cursor = '';
+    })
+
     setTimeout(() => toggleLoad(), 2000)
   })
 }
