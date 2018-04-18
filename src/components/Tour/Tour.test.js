@@ -2,12 +2,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { shallow } from 'enzyme';
+import { mockDistrict } from '../../__mocks__/mockdata'
 import { Tour } from './Tour';
 jest.mock('./../../.key.js', () => () => ({ MAPBOX_TOKEN: 'faketoken' }));
 jest.mock('../../../node_modules/mapbox-gl/dist/mapbox-gl', () => () => ({ Map: () => ({}) }));
 jest.mock('../../../node_modules/threebox/', () => () => ({ threebox: jest.fn() }));
 jest.mock('../../actions/index', () => () => ({ addDistrict: jest.fn() }));
-import { mockDistrict } from '../../__mocks__/mockdata'
 
 describe('Tour', () => {
   let renderedComponent
