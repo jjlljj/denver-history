@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { func, arrayOf, object } from 'prop-types';
 import './Map.css';
 
 import mapboxgl from 'mapbox-gl';
@@ -12,36 +13,39 @@ import { addBuilding, showSidebar, clearLoading } from '../../actions';
 export class Map extends Component {
     
   componentDidMount() {
-    this.renderMap()
+    this.renderMap();
   }
 
   renderMap = () => {
     const { geoJSON, clearLoading } = this.props; 
-    const { handleBuildingClick } = this
+    const { handleBuildingClick } = this;
 
     mapboxgl.accessToken = MB_TOKEN;
     this.map = new mapboxgl.Map(mapParams(this.mapContainer));
-    this.map.addControl(new mapboxgl.ScaleControl({ maxWidth: 80, unit: 'imperial' }));
+    this.map.addControl(new mapboxgl.ScaleControl({ 
+      maxWidth: 80, 
+      unit: 'imperial' 
+    }));
     this.map.addControl(new mapboxgl.NavigationControl());
 
-    renderMapElements(this.map, geoJSON, handleBuildingClick, clearLoading)
+    renderMapElements(this.map, geoJSON, handleBuildingClick, clearLoading);
   }
 
   handleBuildingClick = async (buildingId) => {
     try {
-      const response = await getBuilding(buildingId)
+      const response = await getBuilding(buildingId);
 
-      this.props.addBuilding(response[0])
-      this.props.showSidebar()
+      this.props.addBuilding(response[0]);
+      this.props.showSidebar();
     } catch (error) {
-      console.log(error)
+      console.log(error); //eslint-disable-line
     }
   }
 
-  shouldComponentUpdate = (nextProps, nextState) => {
+  shouldComponentUpdate = () => {
     if (this.map) {
       return false;
-    };
+    }
   }
 
   componentWillUnmount() {
@@ -54,14 +58,21 @@ export class Map extends Component {
       <div className="map-wrap">
         <div id="map" ref={el => this.mapContainer = el} ></div>
       </div>
-    )
-  };
+    );
+  }
 }
+
+Map.propTypes = {
+  addBuilding: func,
+  showSidebar: func,
+  clearLoading: func,
+  geoJSON: arrayOf(object)
+};
 
 const mapDispatchToProps = dispatch => ({
   addBuilding: building => dispatch(addBuilding(building)),
   showSidebar: () => dispatch(showSidebar()),
   clearLoading: () => dispatch(clearLoading())
-})
+});
 
-export default connect(null, mapDispatchToProps)(Map)
+export default connect(null, mapDispatchToProps)(Map);
