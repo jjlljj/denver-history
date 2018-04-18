@@ -5,7 +5,7 @@ import { shallow } from 'enzyme';
 import { Map } from './Map';
 jest.mock('../../../node_modules/mapbox-gl/dist/mapbox-gl', () => () => ({ Map: () => ({}) }));
 jest.mock('../../../node_modules/threebox/', () => () => ({ threebox: jest.fn() }));
-jest.mock('../../.key', () => () => ({ MAPBOX_TOKEN: 'faketoken' }));
+jest.mock('./../../.key', () => () => ({  MAPBOX_TOKEN: 'faketoken' }));
 import { mockBuilding } from '../../__mocks__/mockData';
 
 describe('Map', () => {
