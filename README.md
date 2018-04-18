@@ -7,12 +7,14 @@ We wanted to make an application that served information from an API that Nora b
 
 ## Tech Stack
 #### Front End
-* React 
-* Redux
+* React
+* Redux 
 * Router
+* CSS Animations
 * Mapbox GL
 * Threejs 
 * Threebox
+* Complete testing suite in Jest & Enzyme
 * [Deployed on Surge](http://historicdenver.surge.sh/tour)
 
 #### Back End
@@ -20,11 +22,27 @@ We wanted to make an application that served information from an API that Nora b
 * Postgres / SQL Database
 * Knex SQL library
 * JSON Web Token Authentication
+* [Travis CI](http://travisci.org/nogully/denver-history)
+* Complete testing suite in Mocha & ChaiHTTP
+* Git Hooks
 * [Deployed on Heroku](http://denver-history.herokuapp.com)
 * [API Documentation](http://github.com/nogully/denver-history)
 
 ## Content
-Data came from: 
-* [Denver Open Data]()
-*
+Data was scraped from: 
+* Data and geolocation: [Denver Open Data](http://denveropendata.gov)
+* Photos: [Denver Public Library Western History Collection](http://digital.denverlibrary.org/cdm/buildings/#direct) *Images subject to copyright and used without permission.*   
+* Descriptions: [Wikipedia](http://wikipedia.com)
+
+## Future Plans
+This application is a **work-in-progress** so please check back again! 
+
+## To Use This Repo
+1. From the command line, clone down this repo `git clone [this url]`
+2. Install the dependencies: `cd denver-history && npm install`
+3. Get an API key from [Mapbox](http://mapbox.com) and save it in a file called `.key.js` in the `src` directory as: 
+```
+export const MB_TOKEN = 'that.string.you.got.from.mapbox'
+```
+4. Have fun! 
 
