@@ -15,27 +15,29 @@ We wanted to make an application that served information from an API that Nora b
 * Threejs 
 * Threebox
 * Complete testing suite in Jest & Enzyme
-* [Deployed on Surge](http://historicdenver.surge.sh/tour)
+* [Deployed on Surge](http://historicdenver.surge.sh)
 
 #### Back End
 * Node / Express
 * Postgres / SQL Database
 * Knex SQL library
 * JSON Web Token Authentication
-* [Travis CI](http://travisci.org/nogully/denver-history)
+* [Travis CI](http://travis-ci.org/nogully/denver-history)
 * Complete testing suite in Mocha & ChaiHTTP
-* Git Hooks
 * [Deployed on Heroku](http://denver-history.herokuapp.com)
 * [API Documentation](http://github.com/nogully/denver-history)
 
 ## Content
 Data was scraped from: 
-* Data and geolocation: [Denver Open Data](http://denveropendata.gov)
-* Photos: [Denver Public Library Western History Collection](http://digital.denverlibrary.org/cdm/buildings/#direct) *Images subject to copyright and used without permission.*   
-* Descriptions: [Wikipedia](http://wikipedia.com)
+* Data and geolocation: [Denver Open Data](https://www.denvergov.org/opendata)
+* Photos: [Denver Public Library Western History Collection](http://digital.denverlibrary.org/) *Images subject to copyright and used without permission.*   
+* Descriptions: [Wikipedia](http://wikipedia.org)
 
 ## Future Plans
-This application is a **work-in-progress** so please check back again! 
+* Add more buildings to tour
+* Add 3D renderings of buildings to the map
+* Apply historic photos as textures to 3D buildings
+* This application is a **work-in-progress** so please check back again! 
 
 ## To Use This Repo
 1. From the command line, clone down this repo `git clone [this url]`
