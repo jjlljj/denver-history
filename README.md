@@ -48,3 +48,5 @@ export const MB_TOKEN = 'that.string.you.got.from.mapbox'
 ```
 4. Have fun! 
 
+
+
