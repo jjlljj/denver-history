@@ -59,12 +59,14 @@ const formatGeoJSON = geoJSON => {
       "type": "symbol",
       "source": {
           "type": "geojson",
+          "cluster": false,
           "data": {
               "type": "FeatureCollection",
               "features": formatPoints(geoJSON)
           }
       },
       "layout": {
+          "text-optional": true,
           "icon-image": "{icon}-15",
           "text-field": "{title}",
           "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"],
