@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { boolean, arrayOf, object, func } from 'prop-types';
+import { bool, arrayOf, object, func } from 'prop-types';
 import './Tour.css';
 import Map from '../Map/Map';
 import Header from '../Header/Header';
@@ -57,7 +57,7 @@ export class Tour extends Component {
 
 Tour.propTypes = {
   addDistrict: func,
-  showLoading: boolean,
+  showLoading: bool,
   district: arrayOf(object)
 };
 

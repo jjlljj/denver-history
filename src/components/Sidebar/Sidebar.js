@@ -1,7 +1,7 @@
 /* eslint-disable camelcase */
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { object, func } from 'prop-types';
+import { object, func, bool } from 'prop-types';
 import './Sidebar.css';
 import { hideSidebar } from '../../actions';
 
@@ -46,7 +46,7 @@ export class Sidebar extends Component {
 
 Sidebar.propTypes = {
   hideSidebar: func,
-  showSidebar: func,
+  showSidebar: bool,
   building: object
 };
 
