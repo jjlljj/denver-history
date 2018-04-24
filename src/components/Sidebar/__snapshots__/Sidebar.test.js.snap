@@ -61,7 +61,7 @@ ShallowWrapper {
                     ❮❮
           </div>
           <div
-                    class="banner-img"
+                    className="banner-img"
                     style={
                               Object {
                                         "backgroundImage": "url(http://denver-history.herokuapp.com/images/https://anschutzcollection.org/wp-content/uploads/2017/10/Navarre_2.png)",
@@ -107,7 +107,7 @@ ShallowWrapper {
               ❮❮
 </div>,
             <div
-              class="banner-img"
+              className="banner-img"
               style={
                             Object {
                                           "backgroundImage": "url(http://denver-history.herokuapp.com/images/https://anschutzcollection.org/wp-content/uploads/2017/10/Navarre_2.png)",
@@ -137,7 +137,7 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "class": "banner-img",
+              "className": "banner-img",
               "style": Object {
                 "backgroundImage": "url(http://denver-history.herokuapp.com/images/https://anschutzcollection.org/wp-content/uploads/2017/10/Navarre_2.png)",
               },
@@ -276,7 +276,7 @@ ShallowWrapper {
                         ❮❮
             </div>
             <div
-                        class="banner-img"
+                        className="banner-img"
                         style={
                                     Object {
                                                 "backgroundImage": "url(http://denver-history.herokuapp.com/images/https://anschutzcollection.org/wp-content/uploads/2017/10/Navarre_2.png)",
@@ -322,7 +322,7 @@ ShallowWrapper {
                 ❮❮
 </div>,
               <div
-                class="banner-img"
+                className="banner-img"
                 style={
                                 Object {
                                                 "backgroundImage": "url(http://denver-history.herokuapp.com/images/https://anschutzcollection.org/wp-content/uploads/2017/10/Navarre_2.png)",
@@ -352,7 +352,7 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "class": "banner-img",
+                "className": "banner-img",
                 "style": Object {
                   "backgroundImage": "url(http://denver-history.herokuapp.com/images/https://anschutzcollection.org/wp-content/uploads/2017/10/Navarre_2.png)",
                 },
@@ -546,7 +546,7 @@ ShallowWrapper {
                     ❮❮
           </div>
           <div
-                    class="banner-img"
+                    className="banner-img"
                     style={
                               Object {
                                         "backgroundImage": "url(http://denver-history.herokuapp.com/images/https://anschutzcollection.org/wp-content/uploads/2017/10/Navarre_2.png)",
@@ -592,7 +592,7 @@ ShallowWrapper {
               ❮❮
 </div>,
             <div
-              class="banner-img"
+              className="banner-img"
               style={
                             Object {
                                           "backgroundImage": "url(http://denver-history.herokuapp.com/images/https://anschutzcollection.org/wp-content/uploads/2017/10/Navarre_2.png)",
@@ -622,7 +622,7 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "class": "banner-img",
+              "className": "banner-img",
               "style": Object {
                 "backgroundImage": "url(http://denver-history.herokuapp.com/images/https://anschutzcollection.org/wp-content/uploads/2017/10/Navarre_2.png)",
               },
@@ -761,7 +761,7 @@ ShallowWrapper {
                         ❮❮
             </div>
             <div
-                        class="banner-img"
+                        className="banner-img"
                         style={
                                     Object {
                                                 "backgroundImage": "url(http://denver-history.herokuapp.com/images/https://anschutzcollection.org/wp-content/uploads/2017/10/Navarre_2.png)",
@@ -807,7 +807,7 @@ ShallowWrapper {
                 ❮❮
 </div>,
               <div
-                class="banner-img"
+                className="banner-img"
                 style={
                                 Object {
                                                 "backgroundImage": "url(http://denver-history.herokuapp.com/images/https://anschutzcollection.org/wp-content/uploads/2017/10/Navarre_2.png)",
@@ -837,7 +837,7 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "class": "banner-img",
+                "className": "banner-img",
                 "style": Object {
                   "backgroundImage": "url(http://denver-history.herokuapp.com/images/https://anschutzcollection.org/wp-content/uploads/2017/10/Navarre_2.png)",
                 },
