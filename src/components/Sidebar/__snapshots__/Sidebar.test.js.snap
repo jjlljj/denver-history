@@ -60,8 +60,13 @@ ShallowWrapper {
           >
                     ❮❮
           </div>
-          <img
-                    src="http://denver-history.herokuapp.com/images/https://anschutzcollection.org/wp-content/uploads/2017/10/Navarre_2.png"
+          <div
+                    class="banner-img"
+                    style={
+                              Object {
+                                        "backgroundImage": "url(http://denver-history.herokuapp.com/images/https://anschutzcollection.org/wp-content/uploads/2017/10/Navarre_2.png)",
+                                      }
+                    }
           />
 </div>,
         <div
@@ -101,8 +106,13 @@ ShallowWrapper {
 >
               ❮❮
 </div>,
-            <img
-              src="http://denver-history.herokuapp.com/images/https://anschutzcollection.org/wp-content/uploads/2017/10/Navarre_2.png"
+            <div
+              class="banner-img"
+              style={
+                            Object {
+                                          "backgroundImage": "url(http://denver-history.herokuapp.com/images/https://anschutzcollection.org/wp-content/uploads/2017/10/Navarre_2.png)",
+                                        }
+              }
 />,
           ],
           "className": "banner-img-wrap",
@@ -127,11 +137,14 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "src": "http://denver-history.herokuapp.com/images/https://anschutzcollection.org/wp-content/uploads/2017/10/Navarre_2.png",
+              "class": "banner-img",
+              "style": Object {
+                "backgroundImage": "url(http://denver-history.herokuapp.com/images/https://anschutzcollection.org/wp-content/uploads/2017/10/Navarre_2.png)",
+              },
             },
             "ref": null,
             "rendered": null,
-            "type": "img",
+            "type": "div",
           },
         ],
         "type": "div",
@@ -262,8 +275,13 @@ ShallowWrapper {
             >
                         ❮❮
             </div>
-            <img
-                        src="http://denver-history.herokuapp.com/images/https://anschutzcollection.org/wp-content/uploads/2017/10/Navarre_2.png"
+            <div
+                        class="banner-img"
+                        style={
+                                    Object {
+                                                "backgroundImage": "url(http://denver-history.herokuapp.com/images/https://anschutzcollection.org/wp-content/uploads/2017/10/Navarre_2.png)",
+                                              }
+                        }
             />
 </div>,
           <div
@@ -303,8 +321,13 @@ ShallowWrapper {
 >
                 ❮❮
 </div>,
-              <img
-                src="http://denver-history.herokuapp.com/images/https://anschutzcollection.org/wp-content/uploads/2017/10/Navarre_2.png"
+              <div
+                class="banner-img"
+                style={
+                                Object {
+                                                "backgroundImage": "url(http://denver-history.herokuapp.com/images/https://anschutzcollection.org/wp-content/uploads/2017/10/Navarre_2.png)",
+                                              }
+                }
 />,
             ],
             "className": "banner-img-wrap",
@@ -329,11 +352,14 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "src": "http://denver-history.herokuapp.com/images/https://anschutzcollection.org/wp-content/uploads/2017/10/Navarre_2.png",
+                "class": "banner-img",
+                "style": Object {
+                  "backgroundImage": "url(http://denver-history.herokuapp.com/images/https://anschutzcollection.org/wp-content/uploads/2017/10/Navarre_2.png)",
+                },
               },
               "ref": null,
               "rendered": null,
-              "type": "img",
+              "type": "div",
             },
           ],
           "type": "div",
@@ -519,8 +545,13 @@ ShallowWrapper {
           >
                     ❮❮
           </div>
-          <img
-                    src="http://denver-history.herokuapp.com/images/https://anschutzcollection.org/wp-content/uploads/2017/10/Navarre_2.png"
+          <div
+                    class="banner-img"
+                    style={
+                              Object {
+                                        "backgroundImage": "url(http://denver-history.herokuapp.com/images/https://anschutzcollection.org/wp-content/uploads/2017/10/Navarre_2.png)",
+                                      }
+                    }
           />
 </div>,
         <div
@@ -560,8 +591,13 @@ ShallowWrapper {
 >
               ❮❮
 </div>,
-            <img
-              src="http://denver-history.herokuapp.com/images/https://anschutzcollection.org/wp-content/uploads/2017/10/Navarre_2.png"
+            <div
+              class="banner-img"
+              style={
+                            Object {
+                                          "backgroundImage": "url(http://denver-history.herokuapp.com/images/https://anschutzcollection.org/wp-content/uploads/2017/10/Navarre_2.png)",
+                                        }
+              }
 />,
           ],
           "className": "banner-img-wrap",
@@ -586,11 +622,14 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "src": "http://denver-history.herokuapp.com/images/https://anschutzcollection.org/wp-content/uploads/2017/10/Navarre_2.png",
+              "class": "banner-img",
+              "style": Object {
+                "backgroundImage": "url(http://denver-history.herokuapp.com/images/https://anschutzcollection.org/wp-content/uploads/2017/10/Navarre_2.png)",
+              },
             },
             "ref": null,
             "rendered": null,
-            "type": "img",
+            "type": "div",
           },
         ],
         "type": "div",
@@ -721,8 +760,13 @@ ShallowWrapper {
             >
                         ❮❮
             </div>
-            <img
-                        src="http://denver-history.herokuapp.com/images/https://anschutzcollection.org/wp-content/uploads/2017/10/Navarre_2.png"
+            <div
+                        class="banner-img"
+                        style={
+                                    Object {
+                                                "backgroundImage": "url(http://denver-history.herokuapp.com/images/https://anschutzcollection.org/wp-content/uploads/2017/10/Navarre_2.png)",
+                                              }
+                        }
             />
 </div>,
           <div
@@ -762,8 +806,13 @@ ShallowWrapper {
 >
                 ❮❮
 </div>,
-              <img
-                src="http://denver-history.herokuapp.com/images/https://anschutzcollection.org/wp-content/uploads/2017/10/Navarre_2.png"
+              <div
+                class="banner-img"
+                style={
+                                Object {
+                                                "backgroundImage": "url(http://denver-history.herokuapp.com/images/https://anschutzcollection.org/wp-content/uploads/2017/10/Navarre_2.png)",
+                                              }
+                }
 />,
             ],
             "className": "banner-img-wrap",
@@ -788,11 +837,14 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "src": "http://denver-history.herokuapp.com/images/https://anschutzcollection.org/wp-content/uploads/2017/10/Navarre_2.png",
+                "class": "banner-img",
+                "style": Object {
+                  "backgroundImage": "url(http://denver-history.herokuapp.com/images/https://anschutzcollection.org/wp-content/uploads/2017/10/Navarre_2.png)",
+                },
               },
               "ref": null,
               "rendered": null,
-              "type": "img",
+              "type": "div",
             },
           ],
           "type": "div",
