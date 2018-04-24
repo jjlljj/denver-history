@@ -15,6 +15,14 @@
 }
 
 .mapboxgl-ctrl-attrib a, 
-.mapboxgl-ctrl a {
+.mapboxgl-ctrl a, 
+.mapboxgl-ctrl-bottom-right .mapboxgl-ctrl-attrib {
   display: none;
+}
+
+
+@media screen and (max-width: 650px) {
+  .map-wrap {
+    flex-grow: 1;
+  }
 }

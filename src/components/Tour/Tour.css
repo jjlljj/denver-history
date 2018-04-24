@@ -1,11 +1,14 @@
 .main-wrap {
   display: flex;
+  font-family: 'Open Sans', sans-serif;
   height: 90vh;
   justify-content: space-between;
   min-height: 400px;
-  font-family: 'Open Sans', sans-serif;
+  position: relative;
 }
 
-/*@media and max-width(500px) {
-  
-}*/
+@media screen and (max-width: 650px) {
+  .main-wrap {
+    flex-direction: column-reverse;
+  }
+}

@@ -94,7 +94,7 @@ export const renderMapElements = (map, geoJSON, handleBuildingClick, toggleLoad)
       map.getCanvas().style.cursor = '';
     })
 
-    setTimeout(() => toggleLoad(), 2000)
+    setTimeout(() => toggleLoad(), 1800)
   })
 }
 

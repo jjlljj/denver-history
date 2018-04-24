@@ -3,6 +3,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { shallow } from 'enzyme';
 import { Map } from './Map';
+jest.mock('../../.key.js', () => () => ({MB_TOKEN: 'fakekey'}));
 jest.mock('../../../node_modules/mapbox-gl/dist/mapbox-gl', () => () => ({ Map: () => ({}) }));
 jest.mock('../../../node_modules/threebox/', () => () => ({ threebox: jest.fn() }));
 import { mockBuilding } from '../../__mocks__/mockData';

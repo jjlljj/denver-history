@@ -28,8 +28,11 @@ export class Sidebar extends Component {
           <div 
             className="hide-sidebar-btn" 
             onClick={this.handleHideSidebar} >&#x276E;&#x276E;</div>
-          <img 
-            src={`http://denver-history.herokuapp.com/images/${photo_link}`} />
+          <div 
+            className="banner-img"
+            style={ 
+              {backgroundImage: `url(http://denver-history.herokuapp.com/images/${photo_link})`} 
+            }></div>
         </div>
         <div className="content-wrap">
           <h2>{ ldmk_name }</h2>

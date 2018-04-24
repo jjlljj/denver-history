@@ -16,7 +16,7 @@
   height: 100%;
   transform-style: preserve-3d;
   transform: translateZ(-182px) rotateY(0);
-  animation: carousel 10s infinite cubic-bezier(1,.015,.295,1.225) forwards;
+  animation: carousel 8s infinite cubic-bezier(1,.015,.295,1.225) forwards;
 }
 
 .icon-cards__item {
