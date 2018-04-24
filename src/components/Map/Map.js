@@ -22,10 +22,6 @@ export class Map extends Component {
 
     mapboxgl.accessToken = MB_TOKEN;
     this.map = new mapboxgl.Map(mapParams(this.mapContainer));
-    this.map.addControl(new mapboxgl.ScaleControl({ 
-      maxWidth: 80, 
-      unit: 'imperial' 
-    }));
     this.map.addControl(new mapboxgl.NavigationControl());
 
     renderMapElements(this.map, geoJSON, handleBuildingClick, clearLoading);
