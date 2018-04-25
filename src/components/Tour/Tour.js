@@ -18,7 +18,7 @@ export class Tour extends Component {
 
   fetchBuildings = async () => {
     try {
-      const district = await getDistrictBuildings(3);
+      const district = await getDistrictBuildings(57);
       this.props.addDistrict(district);
     } catch (error) {
       console.log(error); //eslint-disable-line
