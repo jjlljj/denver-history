@@ -6,6 +6,18 @@ import './Sidebar.css';
 import { hideSidebar } from '../../actions';
 
 export class Sidebar extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      photo: ''
+    }
+  }
+
+  handlePhotoSlider = event => {
+    const { name } = event.target;
+
+    console.log(name)
+  }
 
   handleHideSidebar = () => {
     this.props.hideSidebar();
@@ -20,6 +32,7 @@ export class Sidebar extends Component {
       description 
     } = this.props.building;
     const { showSidebar } = this.props;
+    const { photo } = this.state
     const displayStatus = showSidebar ? 'sidebar-show' : 'sidebar-hidden';
 
     return (
@@ -28,10 +41,18 @@ export class Sidebar extends Component {
           <div 
             className="hide-sidebar-btn" 
             onClick={this.handleHideSidebar} >&#x276E;&#x276E;</div>
+          <div
+            name="left"
+            className="slider-btn slider-btn-left"
+            onClick={this.handlePhotoSlider}>&#x276E;</div>
+          <div
+            name="right"
+            className="slider-btn slider-btn-right"
+            onClick={this.handlePhotoSlider}>&#x276F;</div>
           <div 
             className="banner-img"
             style={ 
-              {backgroundImage: `url(http://denver-history.herokuapp.com/images/${photo_link})`} 
+              {backgroundImage: `url(http://denver-history.herokuapp.com/images/${photo || photo_link})`} 
             }></div>
         </div>
         <div className="content-wrap">

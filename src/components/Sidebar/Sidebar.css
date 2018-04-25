@@ -6,13 +6,6 @@
   width: 40vw;
 }
 
-.hide-sidebar-btn {
-  cursor: pointer;
-  position: absolute;
-  right: 20px;
-  top: 20px;
-}
-
 .sidebar-hidden {
   overflow: hidden;
   transition: flex 0.3s ease-out;
@@ -25,6 +18,34 @@
   transition: flex 0.3s ease-out;
   transition-delay: 0.1s;
   flex: 1;
+}
+
+.hide-sidebar-btn {
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.slider-btn {
+  cursor: pointer;
+  font-size: 42px;
+  font-weight: 700;
+  opacity: .5;
+  position: absolute;
+  top: 130px;
+}
+
+.slider-btn:hover {
+  opacity: 1;
+}
+
+.slider-btn-left {
+  left: 10px;
+}
+
+.slider-btn-right {
+  right: 10px;
 }
 
 .banner-img-wrap {
