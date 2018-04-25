@@ -13,10 +13,25 @@ export class Sidebar extends Component {
     }
   }
 
-  handlePhotoSlider = event => {
-    const { name } = event.target;
+  componentWillReceiveProps = nextProps => {
+    if ( this.props.building !== nextProps.building ) {
+      this.setState({ photo: nextProps.building.photo_link[0] });
+    }
+  }
 
-    console.log(name)
+  handlePhotoSlider = event => {
+    let { name, photo } = event.target.dataset;
+    const { photo_link } = this.props.building;
+    let idx = photo_link.indexOf(photo)
+
+    if (name === 'left') {
+      idx = idx > 0 ? idx-1 : photo_link.length - 1;
+    } else if (name === 'right') {
+      idx = idx < photo_link.length - 1 ? idx+1 : 0;
+    }
+    console.log(idx)
+
+    this.setState({photo: photo_link[idx]});
   }
 
   handleHideSidebar = () => {
@@ -42,11 +57,13 @@ export class Sidebar extends Component {
             className="hide-sidebar-btn" 
             onClick={this.handleHideSidebar} >&#x276E;&#x276E;</div>
           <div
-            name="left"
+            data-name="left"
+            data-photo={ photo }
             className="slider-btn slider-btn-left"
             onClick={this.handlePhotoSlider}>&#x276E;</div>
           <div
-            name="right"
+            data-name="right"
+            data-photo={ photo }
             className="slider-btn slider-btn-right"
             onClick={this.handlePhotoSlider}>&#x276F;</div>
           <div 
