@@ -7,10 +7,10 @@ import { hideSidebar } from '../../actions';
 
 export class Sidebar extends Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
       photo: ''
-    }
+    };
   }
 
   componentWillReceiveProps = nextProps => {
@@ -22,14 +22,13 @@ export class Sidebar extends Component {
   handlePhotoSlider = event => {
     let { name, photo } = event.target.dataset;
     const { photo_link } = this.props.building;
-    let idx = photo_link.indexOf(photo)
+    let idx = photo_link.indexOf(photo);
 
     if (name === 'left') {
       idx = idx > 0 ? idx-1 : photo_link.length - 1;
     } else if (name === 'right') {
       idx = idx < photo_link.length - 1 ? idx+1 : 0;
     }
-    console.log(idx)
 
     this.setState({photo: photo_link[idx]});
   }
@@ -43,11 +42,10 @@ export class Sidebar extends Component {
       ldmk_name, 
       year_built, 
       address_line1, 
-      photo_link, 
       description 
     } = this.props.building;
     const { showSidebar } = this.props;
-    const { photo } = this.state
+    const { photo } = this.state;
     const displayStatus = showSidebar ? 'sidebar-show' : 'sidebar-hidden';
 
     return (
@@ -69,7 +67,7 @@ export class Sidebar extends Component {
           <div 
             className="banner-img"
             style={ 
-              {backgroundImage: `url(http://denver-history.herokuapp.com/images/${photo || photo_link})`} 
+              {backgroundImage: `url(http://denver-history.herokuapp.com/images/${photo})`} //eslint-disable-line max-len
             }></div>
         </div>
         <div className="content-wrap">

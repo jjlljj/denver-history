@@ -61,6 +61,22 @@ ShallowWrapper {
                     ❮❮
           </div>
           <div
+                    className="slider-btn slider-btn-left"
+                    data-name="left"
+                    data-photo=""
+                    onClick={[Function]}
+          >
+                    ❮
+          </div>
+          <div
+                    className="slider-btn slider-btn-right"
+                    data-name="right"
+                    data-photo=""
+                    onClick={[Function]}
+          >
+                    ❯
+          </div>
+          <div
                     className="banner-img"
                     style={
                               Object {
@@ -107,6 +123,22 @@ ShallowWrapper {
               ❮❮
 </div>,
             <div
+              className="slider-btn slider-btn-left"
+              data-name="left"
+              data-photo=""
+              onClick={[Function]}
+>
+              ❮
+</div>,
+            <div
+              className="slider-btn slider-btn-right"
+              data-name="right"
+              data-photo=""
+              onClick={[Function]}
+>
+              ❯
+</div>,
+            <div
               className="banner-img"
               style={
                             Object {
@@ -130,6 +162,36 @@ ShallowWrapper {
             },
             "ref": null,
             "rendered": "❮❮",
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "❮",
+              "className": "slider-btn slider-btn-left",
+              "data-name": "left",
+              "data-photo": "",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "❮",
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "❯",
+              "className": "slider-btn slider-btn-right",
+              "data-name": "right",
+              "data-photo": "",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "❯",
             "type": "div",
           },
           Object {
@@ -276,6 +338,22 @@ ShallowWrapper {
                         ❮❮
             </div>
             <div
+                        className="slider-btn slider-btn-left"
+                        data-name="left"
+                        data-photo=""
+                        onClick={[Function]}
+            >
+                        ❮
+            </div>
+            <div
+                        className="slider-btn slider-btn-right"
+                        data-name="right"
+                        data-photo=""
+                        onClick={[Function]}
+            >
+                        ❯
+            </div>
+            <div
                         className="banner-img"
                         style={
                                     Object {
@@ -322,6 +400,22 @@ ShallowWrapper {
                 ❮❮
 </div>,
               <div
+                className="slider-btn slider-btn-left"
+                data-name="left"
+                data-photo=""
+                onClick={[Function]}
+>
+                ❮
+</div>,
+              <div
+                className="slider-btn slider-btn-right"
+                data-name="right"
+                data-photo=""
+                onClick={[Function]}
+>
+                ❯
+</div>,
+              <div
                 className="banner-img"
                 style={
                                 Object {
@@ -345,6 +439,36 @@ ShallowWrapper {
               },
               "ref": null,
               "rendered": "❮❮",
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "❮",
+                "className": "slider-btn slider-btn-left",
+                "data-name": "left",
+                "data-photo": "",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "❮",
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "❯",
+                "className": "slider-btn slider-btn-right",
+                "data-name": "right",
+                "data-photo": "",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "❯",
               "type": "div",
             },
             Object {
@@ -546,6 +670,22 @@ ShallowWrapper {
                     ❮❮
           </div>
           <div
+                    className="slider-btn slider-btn-left"
+                    data-name="left"
+                    data-photo=""
+                    onClick={[Function]}
+          >
+                    ❮
+          </div>
+          <div
+                    className="slider-btn slider-btn-right"
+                    data-name="right"
+                    data-photo=""
+                    onClick={[Function]}
+          >
+                    ❯
+          </div>
+          <div
                     className="banner-img"
                     style={
                               Object {
@@ -592,6 +732,22 @@ ShallowWrapper {
               ❮❮
 </div>,
             <div
+              className="slider-btn slider-btn-left"
+              data-name="left"
+              data-photo=""
+              onClick={[Function]}
+>
+              ❮
+</div>,
+            <div
+              className="slider-btn slider-btn-right"
+              data-name="right"
+              data-photo=""
+              onClick={[Function]}
+>
+              ❯
+</div>,
+            <div
               className="banner-img"
               style={
                             Object {
@@ -615,6 +771,36 @@ ShallowWrapper {
             },
             "ref": null,
             "rendered": "❮❮",
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "❮",
+              "className": "slider-btn slider-btn-left",
+              "data-name": "left",
+              "data-photo": "",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "❮",
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "❯",
+              "className": "slider-btn slider-btn-right",
+              "data-name": "right",
+              "data-photo": "",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "❯",
             "type": "div",
           },
           Object {
@@ -761,6 +947,22 @@ ShallowWrapper {
                         ❮❮
             </div>
             <div
+                        className="slider-btn slider-btn-left"
+                        data-name="left"
+                        data-photo=""
+                        onClick={[Function]}
+            >
+                        ❮
+            </div>
+            <div
+                        className="slider-btn slider-btn-right"
+                        data-name="right"
+                        data-photo=""
+                        onClick={[Function]}
+            >
+                        ❯
+            </div>
+            <div
                         className="banner-img"
                         style={
                                     Object {
@@ -807,6 +1009,22 @@ ShallowWrapper {
                 ❮❮
 </div>,
               <div
+                className="slider-btn slider-btn-left"
+                data-name="left"
+                data-photo=""
+                onClick={[Function]}
+>
+                ❮
+</div>,
+              <div
+                className="slider-btn slider-btn-right"
+                data-name="right"
+                data-photo=""
+                onClick={[Function]}
+>
+                ❯
+</div>,
+              <div
                 className="banner-img"
                 style={
                                 Object {
@@ -830,6 +1048,36 @@ ShallowWrapper {
               },
               "ref": null,
               "rendered": "❮❮",
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "❮",
+                "className": "slider-btn slider-btn-left",
+                "data-name": "left",
+                "data-photo": "",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "❮",
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "❯",
+                "className": "slider-btn slider-btn-right",
+                "data-name": "right",
+                "data-photo": "",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "❯",
               "type": "div",
             },
             Object {
