@@ -20,6 +20,32 @@
   display: none;
 }
 
+.mapboxgl-popup {
+  max-width: 250px;
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.mapboxgl-popup img {
+  width: 70px; 
+  height: 70px;
+  border: 1px solid #281845; 
+  border-radius: 5px; 
+  margin-bottom: -10px;
+}
+
+.mapboxgl-popup div {
+  font-size: 1rem;
+  margin-left: 10px;
+  font-weight: 700;
+  display: flex;
+  
+}
+
+.mapboxgl-popup p {
+
+}
 
 @media screen and (max-width: 650px) {
   .map-wrap {
