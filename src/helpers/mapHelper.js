@@ -37,7 +37,7 @@ const threedParams = {
 }
 
 const formatPoints = data => {
-  return data.map(({ lat, lon, id, ldmk_name, aka_name, year_built, ldmk_num }) => {
+  return data.map(({ lat, lon, id, ldmk_name, aka_name, year_built, ldmk_num, photo_link }) => {
     return { 
       "type": "Feature",
       "geometry": {
@@ -48,7 +48,7 @@ const formatPoints = data => {
         "title": ldmk_name,
         "icon": "building",
         "id": id,
-        "description": "Click to learn more"
+        "description": `<img src="https://denver-history.herokuapp.com/images/${photo_link[0]}"><div id="wrapper"><p>${ldmk_name}</p></div>`
       }
     }
   }
@@ -84,7 +84,11 @@ const formatGeoJSON = geoJSON => {
 export const renderMapElements = (map, geoJSON, handleBuildingClick, toggleLoad) => {
   const popup = new mapboxgl.Popup({
     closeButton: false,
-    closeOnClick: false
+    closeOnClick: false, 
+    offset: {
+      'top': [0, 40],
+      'bottom': [0, -10]
+    }
   });
 
   map.on('load', () => {
