@@ -46,9 +46,9 @@ const formatPoints = data => {
       }, 
       "properties": {
         "title": ldmk_name,
-        "icon": "monument",
+        "icon": "building",
         "id": id,
-        "description": "total amazingness"
+        "description": "Click to learn more"
       }
     }
   }
@@ -69,10 +69,11 @@ const formatGeoJSON = geoJSON => {
     },
     "layout": {
       "text-optional": true,
-      "icon-image": "{icon}-15",
+      "icon-image": "building-alt1-15",
+      "icon-size": 1.5,
       "text-field": "{title}",
       "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"],
-      "text-offset": [0, 0.6],
+      "text-offset": [0, 0.7],
       "text-anchor": "top"
     }
   }
@@ -98,15 +99,14 @@ export const renderMapElements = (map, geoJSON, handleBuildingClick, toggleLoad)
     map.on('mouseenter', 'points', event => {
       map.getCanvas().style.cursor = 'pointer';
 
-      var coordinates = event.features[0].geometry.coordinates.slice();
-      var description = event.features[0].properties.description;
+      const coordinates = event.features[0].geometry.coordinates.slice();
+      const title = event.features[0].properties.title;
+      const description = event.features[0].properties.description;
 
       while (Math.abs(event.lngLat.lng - coordinates[0]) > 180) {
         coordinates[0] += event.lngLat.lng > coordinates[0] ? 360 : -360;
       }
 
-      // Populate the popup and set its coordinates
-      // based on the feature found.
       popup.setLngLat(coordinates)
         .setHTML(description)
         .addTo(map);
