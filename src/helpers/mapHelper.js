@@ -47,7 +47,8 @@ const formatPoints = data => {
       "properties": {
         "title": ldmk_name,
         "icon": "monument",
-        "id": id
+        "id": id,
+        "description": "total amazingness"
       }
     }
   }
