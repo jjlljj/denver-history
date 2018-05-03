@@ -63,7 +63,6 @@ ShallowWrapper {
           <div
                     className="slider-btn slider-btn-left"
                     data-name="left"
-                    data-photo=""
                     onClick={[Function]}
           >
                     ❮
@@ -71,7 +70,6 @@ ShallowWrapper {
           <div
                     className="slider-btn slider-btn-right"
                     data-name="right"
-                    data-photo=""
                     onClick={[Function]}
           >
                     ❯
@@ -122,22 +120,22 @@ ShallowWrapper {
 >
               ❮❮
 </div>,
-            <div
-              className="slider-btn slider-btn-left"
-              data-name="left"
-              data-photo=""
-              onClick={[Function]}
+            Array [
+              <div
+                className="slider-btn slider-btn-left"
+                data-name="left"
+                onClick={[Function]}
 >
-              ❮
+                ❮
 </div>,
-            <div
-              className="slider-btn slider-btn-right"
-              data-name="right"
-              data-photo=""
-              onClick={[Function]}
+              <div
+                className="slider-btn slider-btn-right"
+                data-name="right"
+                onClick={[Function]}
 >
-              ❯
+                ❯
 </div>,
+            ],
             <div
               className="banner-img"
               style={
@@ -172,7 +170,6 @@ ShallowWrapper {
               "children": "❮",
               "className": "slider-btn slider-btn-left",
               "data-name": "left",
-              "data-photo": "",
               "onClick": [Function],
             },
             "ref": null,
@@ -187,7 +184,6 @@ ShallowWrapper {
               "children": "❯",
               "className": "slider-btn slider-btn-right",
               "data-name": "right",
-              "data-photo": "",
               "onClick": [Function],
             },
             "ref": null,
@@ -340,7 +336,6 @@ ShallowWrapper {
             <div
                         className="slider-btn slider-btn-left"
                         data-name="left"
-                        data-photo=""
                         onClick={[Function]}
             >
                         ❮
@@ -348,7 +343,6 @@ ShallowWrapper {
             <div
                         className="slider-btn slider-btn-right"
                         data-name="right"
-                        data-photo=""
                         onClick={[Function]}
             >
                         ❯
@@ -399,22 +393,22 @@ ShallowWrapper {
 >
                 ❮❮
 </div>,
-              <div
-                className="slider-btn slider-btn-left"
-                data-name="left"
-                data-photo=""
-                onClick={[Function]}
+              Array [
+                <div
+                  className="slider-btn slider-btn-left"
+                  data-name="left"
+                  onClick={[Function]}
 >
-                ❮
+                  ❮
 </div>,
-              <div
-                className="slider-btn slider-btn-right"
-                data-name="right"
-                data-photo=""
-                onClick={[Function]}
+                <div
+                  className="slider-btn slider-btn-right"
+                  data-name="right"
+                  onClick={[Function]}
 >
-                ❯
+                  ❯
 </div>,
+              ],
               <div
                 className="banner-img"
                 style={
@@ -449,7 +443,6 @@ ShallowWrapper {
                 "children": "❮",
                 "className": "slider-btn slider-btn-left",
                 "data-name": "left",
-                "data-photo": "",
                 "onClick": [Function],
               },
               "ref": null,
@@ -464,7 +457,6 @@ ShallowWrapper {
                 "children": "❯",
                 "className": "slider-btn slider-btn-right",
                 "data-name": "right",
-                "data-photo": "",
                 "onClick": [Function],
               },
               "ref": null,
@@ -672,7 +664,6 @@ ShallowWrapper {
           <div
                     className="slider-btn slider-btn-left"
                     data-name="left"
-                    data-photo=""
                     onClick={[Function]}
           >
                     ❮
@@ -680,7 +671,6 @@ ShallowWrapper {
           <div
                     className="slider-btn slider-btn-right"
                     data-name="right"
-                    data-photo=""
                     onClick={[Function]}
           >
                     ❯
@@ -731,22 +721,22 @@ ShallowWrapper {
 >
               ❮❮
 </div>,
-            <div
-              className="slider-btn slider-btn-left"
-              data-name="left"
-              data-photo=""
-              onClick={[Function]}
+            Array [
+              <div
+                className="slider-btn slider-btn-left"
+                data-name="left"
+                onClick={[Function]}
 >
-              ❮
+                ❮
 </div>,
-            <div
-              className="slider-btn slider-btn-right"
-              data-name="right"
-              data-photo=""
-              onClick={[Function]}
+              <div
+                className="slider-btn slider-btn-right"
+                data-name="right"
+                onClick={[Function]}
 >
-              ❯
+                ❯
 </div>,
+            ],
             <div
               className="banner-img"
               style={
@@ -781,7 +771,6 @@ ShallowWrapper {
               "children": "❮",
               "className": "slider-btn slider-btn-left",
               "data-name": "left",
-              "data-photo": "",
               "onClick": [Function],
             },
             "ref": null,
@@ -796,7 +785,6 @@ ShallowWrapper {
               "children": "❯",
               "className": "slider-btn slider-btn-right",
               "data-name": "right",
-              "data-photo": "",
               "onClick": [Function],
             },
             "ref": null,
@@ -949,7 +937,6 @@ ShallowWrapper {
             <div
                         className="slider-btn slider-btn-left"
                         data-name="left"
-                        data-photo=""
                         onClick={[Function]}
             >
                         ❮
@@ -957,7 +944,6 @@ ShallowWrapper {
             <div
                         className="slider-btn slider-btn-right"
                         data-name="right"
-                        data-photo=""
                         onClick={[Function]}
             >
                         ❯
@@ -1008,22 +994,22 @@ ShallowWrapper {
 >
                 ❮❮
 </div>,
-              <div
-                className="slider-btn slider-btn-left"
-                data-name="left"
-                data-photo=""
-                onClick={[Function]}
+              Array [
+                <div
+                  className="slider-btn slider-btn-left"
+                  data-name="left"
+                  onClick={[Function]}
 >
-                ❮
+                  ❮
 </div>,
-              <div
-                className="slider-btn slider-btn-right"
-                data-name="right"
-                data-photo=""
-                onClick={[Function]}
+                <div
+                  className="slider-btn slider-btn-right"
+                  data-name="right"
+                  onClick={[Function]}
 >
-                ❯
+                  ❯
 </div>,
+              ],
               <div
                 className="banner-img"
                 style={
@@ -1058,7 +1044,6 @@ ShallowWrapper {
                 "children": "❮",
                 "className": "slider-btn slider-btn-left",
                 "data-name": "left",
-                "data-photo": "",
                 "onClick": [Function],
               },
               "ref": null,
@@ -1073,7 +1058,6 @@ ShallowWrapper {
                 "children": "❯",
                 "className": "slider-btn slider-btn-right",
                 "data-name": "right",
-                "data-photo": "",
                 "onClick": [Function],
               },
               "ref": null,
