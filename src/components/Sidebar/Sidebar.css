@@ -22,6 +22,7 @@
 
 .hide-sidebar-btn {
   cursor: pointer;
+  opacity: .5;
   position: absolute;
   right: 20px;
   top: 20px;
@@ -36,7 +37,8 @@
   top: 130px;
 }
 
-.slider-btn:hover {
+.slider-btn:hover,
+.hide-sidebar-btn:hover {
   opacity: 1;
 }
 
@@ -70,6 +72,12 @@
 .content-wrap p {
   margin: 20px;
   min-width: 240px;
+}
+
+.content-wrap h2 {
+  border-bottom: 1px solid #f2f2f2;
+  padding-bottom: 20px;
+  text-align: center;
 }
 
 h2 {

@@ -86,7 +86,7 @@ export class Sidebar extends Component {
           <h2>{ ldmk_name }</h2>
           <ul>
             <li>Built: { year_built }</li>
-            <li>Address: { address_line1 }</li>
+            <li>Address: { address_line1 || '' }</li>
           </ul>
           <p>{ description }</p>
         </div>
