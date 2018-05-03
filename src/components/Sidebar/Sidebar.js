@@ -39,18 +39,20 @@ export class Sidebar extends Component {
 
     if ( photo_link && photo_link.length > 1 ) {
       return [
-         ( <div
-            data-name="left"
-            className="slider-btn slider-btn-left"
-            onClick={this.handlePhotoSlider}>&#x276E;</div> 
-         ),
+        ( <div
+          data-name="left"
+          key="left-slider"
+          className="slider-btn slider-btn-left"
+          onClick={this.handlePhotoSlider}>&#x276E;</div> 
+        ),
         (
           <div
             data-name="right"
+            key="right-slider"
             className="slider-btn slider-btn-right"
             onClick={this.handlePhotoSlider}>&#x276F;</div>
         )
-      ]
+      ];
     }
   }
 

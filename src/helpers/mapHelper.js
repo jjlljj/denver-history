@@ -1,4 +1,4 @@
-import { Threebox } from 'threebox';
+//import { Threebox } from 'threebox';
 import * as THREE from 'three';
 import GLTFLoader from 'three-gltf-loader';
 import mapboxgl from 'mapbox-gl';
@@ -93,7 +93,7 @@ export const renderMapElements = (map, geoJSON, handleBuildingClick, toggleLoad)
 
   map.on('load', () => {
     render3dLayers(map, geoJSON)
-    renderThreebox(map)
+    //renderThreebox(map)
 
     map.on('click', 'points', event => {
       const { id } = event.features[0].properties;
@@ -140,23 +140,23 @@ const render3dLayers = (map, geoJSON) => {
   map.addLayer(formatGeoJSON(geoJSON));
 }
 
-const renderThreebox = map => {
-  const threebox = new Threebox(map);
-  threebox.setupDefaultLights();
+//const renderThreebox = map => {
+  //const threebox = new Threebox(map);
+  //threebox.setupDefaultLights();
 
-  const loader = new GLTFLoader();
+  //const loader = new GLTFLoader();
 
-  loader.load("models/unionStation.gltf", gltf => {
-    const bufferGeometry = gltf.scene.children[0].children[1].children[0].geometry;
-    const geometry = new THREE.Geometry().fromBufferGeometry( bufferGeometry );
+  //loader.load("models/unionStation.gltf", gltf => {
+    //const bufferGeometry = gltf.scene.children[0].children[1].children[0].geometry;
+    //const geometry = new THREE.Geometry().fromBufferGeometry( bufferGeometry );
 
-    geometry.rotateY((90/360)*4*Math.PI);
-    geometry.rotateX((90/360)*2*Math.PI);
+    //geometry.rotateY((90/360)*4*Math.PI);
+    //geometry.rotateX((90/360)*2*Math.PI);
 
-    const material = new THREE.MeshPhongMaterial( {color: 0xaaaaff, side: THREE.DoubleSide}); 
-    const position = [-105.00006, 39.75317, 0];
+    //const material = new THREE.MeshPhongMaterial( {color: 0xaaaaff, side: THREE.DoubleSide}); 
+    //const position = [-105.00006, 39.75317, 0];
 
-    const build = new THREE.Mesh( geometry, material );
-    threebox.addAtCoordinate(build, position, {scaleToLatitude: true, preScale: 1});
-  });
-}
+    //const build = new THREE.Mesh( geometry, material );
+    //threebox.addAtCoordinate(build, position, {scaleToLatitude: true, preScale: 1});
+  //});
+//}
